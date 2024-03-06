@@ -241,7 +241,7 @@ export const pricing = [
   },
 ]
 
-export const benefits = [
+export const abouts = [
   {
     id: '0',
     title: 'Ask anything',
@@ -257,7 +257,6 @@ export const benefits = [
     backgroundUrl: './src/assets/benefits/card-2.svg',
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    light: true,
   },
   {
     id: '2',
@@ -274,7 +273,6 @@ export const benefits = [
     backgroundUrl: './src/assets/benefits/card-4.svg',
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
-    light: true,
   },
   {
     id: '4',
