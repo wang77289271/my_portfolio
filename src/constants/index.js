@@ -55,7 +55,7 @@ export const navigation = [
   {
     id: '3',
     title: 'Roadmap',
-    url: '#roadmap',
+    url: '#works',
   },
   {
     id: '4',
@@ -91,7 +91,7 @@ export const brainwaveServicesIcons = [
   sliders04,
 ]
 
-export const roadmap = [
+export const works = [
   {
     id: '0',
     title: 'Voice recognition',
@@ -99,7 +99,6 @@ export const roadmap = [
     date: 'May 2023',
     status: 'done',
     imageUrl: roadmap1,
-    colorful: true,
   },
   {
     id: '1',
