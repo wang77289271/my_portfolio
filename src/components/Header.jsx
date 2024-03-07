@@ -1,90 +1,105 @@
-import { brainwave } from '../assets'
-import { navigation } from '../constants'
-import { disablePageScroll, enablePageScroll } from 'scroll-lock'
+import { motion } from 'framer-motion'
+import { images } from '../constants'
+import ButtonSvgHeader from '../assets/svg/ButtonSvgHeader'
+import ButtonSvgEllipse from '../assets/svg/ButtonSvgEllipse'
+import Section from './Section'
+import { BackgroundCircles, HeaderBackgroundCircles } from './design/Hero'
+import { heroBackground } from '../assets'
+import HeaderBgSvg from '../assets/svg/HeaderBgSvg'
+import { useRef } from 'react'
 
-import { useLocation } from 'react-router-dom'
-import Button from './Button'
-import { HamburgerMenu } from './design/Header'
-import { useState } from 'react'
-import MenuSvg from '../assets/svg/MenuSvg'
+const scaleVariants = {
+  whileInView: {
+    scale: [0, 1],
+    opacity: [0, 1],
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
+  },
+}
 
 const Header = () => {
-  const pathName = useLocation()
-  const [openNavigation, setOpenNavigation] = useState(false)
-
-  const toggleNavigation = () => {
-    if (openNavigation) {
-      setOpenNavigation(false)
-      enablePageScroll()
-    } else {
-      setOpenNavigation(true)
-      disablePageScroll()
-    }
-  }
-  const handleOnClick = () => {
-    if (!openNavigation) return
-    enablePageScroll()
-    setOpenNavigation(false)
-  }
-
+  const parallaxRef = useRef(null)
+  const [flutter, profile_2, redux, sass] = images
   return (
-    <div
-      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6
-       lg:bg-n-8/90 lg:backdrop-blur-sm ${
-         openNavigation ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'
-       }`}
+    <Section
+      // crosses
+      crossesOffset='lg:translate-y-[5.25rem]'
+      className='w-full h-full flex justify-center items-center flex-col pt-[6rem] px-8 lg:flex-row relative'
+      ref={parallaxRef}
     >
-      <div className='flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4'>
-        <a className='block w-[12rem] xl:mr-8' href='#hero'>
-          <img src={brainwave} width={190} height={40} alt='Brainwave' />
-        </a>
-        <nav
-          className={`${
-            openNavigation ? 'flex' : 'hidden'
-          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent'`}
-        >
-          <div className='relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row'>
-            {navigation.map((item) => (
-              <a
-                href={item.url}
-                key={item.id}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
-                  item.onlyMobile ? 'lg:hidden' : ''
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold 
-                ${
-                  item.url === pathName.hash
-                    ? 'z-2 lg:text-n-1'
-                    : 'lg:text-n-1/50'
-                } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-                onClick={handleOnClick}
-              >
-                {item.title}
-              </a>
-            ))}
+      <motion.div
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        style={{ flex: '0.65' }}
+        className='flex flex-col justify-start items-start h-[400px] mb-8 z-2'
+      >
+        <div className='w-full h-full flex flex-col justify-start mx-8 lg:ml-0'>
+          <div className='flex justify-center items-center py-4 px-8 flex-row w-auto relative'>
+            <span className='text-[2.5rem]'>👋</span>
+            <div className='ml-4'>
+              <p className='leading-10 mb-1 text-[0.8rem] text-left whitespace-nowrap'>
+                Hello, I am
+              </p>
+              <h1 className='text-[2.75rem] font-extrabold whitespace-nowrap'>
+                Ye Wang
+              </h1>
+            </div>
+            {ButtonSvgHeader(300, 124, 'top-0')}
           </div>
-          <HamburgerMenu />
-        </nav>
 
-        <a
-          href='#signup'
-          className='button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block'
-        >
-          New account
-        </a>
+          <div className='flex justify-center items-center py-4 px-8 flex-col w-auto relative mt-12 mr-12'>
+            <p className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'>
+              Web Developer
+            </p>
+            <p className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'>
+              Web Designer
+            </p>
+            <p className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'>
+              Freelancer
+            </p>
+            {ButtonSvgHeader(200, 124, 'right-0')}
+          </div>
+        </div>
+      </motion.div>
 
-        <Button className='hidden lg:flex' href='#login'>
-          Sign in
-        </Button>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.2, delayChildren: 0.3 }}
+        className='flex-1 h-full flex justify-end items-end relative z-2'
+      >
+        <img
+          src={profile_2}
+          alt='profile_bg'
+          className='object-contain w-full h-full z-1 pb-18'
+        />
+      </motion.div>
 
-        <Button
-          className='ml-auto lg:hidden'
-          px='px-3'
-          onClick={toggleNavigation}
-        >
-          <MenuSvg openNavigation={openNavigation} />
-        </Button>
+      <motion.div
+        variants={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        style={{ flex: '0.65' }}
+        className='flex flex-col justify-evenly items-start h-full ml-12 z-2'
+      >
+        <div className='relative flex justify-center items-center w-[100px] h-[100px]'>
+          <img src={flutter} alt='flutter' className='w-[60%] h-[60%]' />
+          {ButtonSvgEllipse(100)}
+        </div>
+        <div className='relative flex justify-center items-center w-[150px] h-[150px] m-[1.75rem]'>
+          <img src={redux} alt='redux' className='w-[60%] h-[60%]' />
+          {ButtonSvgEllipse(150)}
+        </div>
+        <div className='relative flex justify-center items-center w-[75px] h-[75px]'>
+          <img src={sass} alt='sass' className='w-[60%] h-[60%]' />
+          {ButtonSvgEllipse(75)}
+        </div>
+      </motion.div>
+      {HeaderBgSvg()}
+      <div className='relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24'>
+        <HeaderBackgroundCircles />
       </div>
-    </div>
+    </Section>
   )
 }
 

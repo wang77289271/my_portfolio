@@ -323,3 +323,7 @@ export const socials = [
     url: '#',
   },
 ]
+
+import { flutter, profile_2, redux, sass } from '../assets'
+
+export const images = [flutter, profile_2, redux, sass]
