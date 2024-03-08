@@ -7,13 +7,16 @@ const Section = ({
   crossesOffset,
   customPaddings,
   children,
+  nopadding,
 }) => {
   return (
     <div
       id={id}
       className={`relative ${
         customPaddings ||
-        `py-10 lg:py:16 xl:pu:20 ${crosses ? 'lg:py-32 xl:py-40' : ''}`
+        `${nopadding ? 'py-0' : 'py-10'} lg:py:16 xl:pu:20 ${
+          crosses ? 'lg:py-32 xl:py-40' : ''
+        }`
       } ${className || ''}`}
     >
       {children}

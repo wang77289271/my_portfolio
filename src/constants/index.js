@@ -34,6 +34,13 @@ import {
   telegram,
   twitter,
   yourlogo,
+  design_bg_1,
+  design_bg_2,
+  design_bg_3,
+  design_bg_4,
+  design_bg_5,
+  design_bg_6,
+  design_bg_7,
 } from '../assets'
 
 export const navigation = [
@@ -303,3 +310,12 @@ export const socials = [
 import { flutter, profile_2, redux, sass } from '../assets'
 
 export const images = [flutter, profile_2, redux, sass]
+export const designImages = [
+  design_bg_1,
+  design_bg_2,
+  design_bg_3,
+  design_bg_4,
+  design_bg_5,
+  design_bg_6,
+  design_bg_7,
+]

@@ -81,6 +81,14 @@ import profile_2 from './Header/profile_2.png'
 import redux from './Header/redux.png'
 import sass from './Header/sass.png'
 
+import design_bg_1 from './designs/design-section-bg-1.jpg'
+import design_bg_2 from './designs/design-section-bg-2.jpg'
+import design_bg_3 from './designs/design-section-bg-3.jpg'
+import design_bg_4 from './designs/design-section-bg-4.jpg'
+import design_bg_5 from './designs/design-section-bg-5.jpg'
+import design_bg_6 from './designs/design-section-bg-6.jpg'
+import design_bg_7 from './designs/design-section-bg-7.jpg'
+
 export {
   brainwave,
   check,
@@ -154,4 +162,11 @@ export {
   profile_2,
   redux,
   sass,
+  design_bg_1,
+  design_bg_2,
+  design_bg_3,
+  design_bg_4,
+  design_bg_5,
+  design_bg_6,
+  design_bg_7,
 }

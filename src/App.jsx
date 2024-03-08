@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Works from './components/Works'
 import Header from './components/Header'
+import Designs from './components/Designs'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Collaboration />
         <Works />
+        <Designs />
       </div>
 
       <ButtonGradient />
