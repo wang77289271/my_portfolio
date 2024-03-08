@@ -6,7 +6,6 @@ import Section from './Section'
 import { BackgroundCircles, HeaderBackgroundCircles } from './design/Hero'
 import { heroBackground } from '../assets'
 import HeaderBgSvg from '../assets/svg/HeaderBgSvg'
-import { useRef } from 'react'
 
 const scaleVariants = {
   whileInView: {
@@ -20,14 +19,12 @@ const scaleVariants = {
 }
 
 const Header = () => {
-  const parallaxRef = useRef(null)
   const [flutter, profile_2, redux, sass] = images
   return (
     <Section
       // crosses
       crossesOffset='lg:translate-y-[5.25rem]'
       className='w-full h-full flex justify-center items-center flex-col pt-[6rem] px-8 lg:flex-row relative'
-      ref={parallaxRef}
     >
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -72,7 +69,7 @@ const Header = () => {
         <img
           src={profile_2}
           alt='profile_bg'
-          className='object-contain w-full h-full z-1 pb-18'
+          className='object-contain w-full h-full z-1 pb-18 min-w-[470px]'
         />
       </motion.div>
 

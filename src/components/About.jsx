@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import Heading from './Heading'
 import { abouts } from '../constants'
 import Arrow from '../assets/svg/Arrow'
 import { GradientLight } from './design/Benefits'
 import ClipPath from '../assets/svg/ClipPath'
 import Section from './Section'
+import { curve } from '../assets'
+import Button from './Button'
 
 const About = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
@@ -20,12 +21,23 @@ const About = () => {
   return (
     <Section id='features'>
       <div className='container relative z-2'>
-        <Heading
-          className='md:max-w-md lg:max-w-2xl'
-          title='Chat Smarter, Not Harder with Brainwave'
-        />
+        <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]'>
+          <h2 className='h2 mb-6'>
+            Crafting Engaging and Accessible&nbsp;Digital{' '}
+            <span className='inline-block relative'>
+              Worlds
+              <img
+                src={curve}
+                className='absolute top-full left-0 w-full xl:-mt-2'
+                width={624}
+                height={28}
+                alt='Curve'
+              />
+            </span>
+          </h2>
+        </div>
 
-        <div className='flex flex-wrap gap-10 mb-10'>
+        <div className='flex justify-center flex-wrap gap-10 mb-10'>
           {abouts.map((about, index) => (
             <div
               key={about.id}
@@ -34,10 +46,10 @@ const About = () => {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
-              <div className='relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none'>
+              <div className='relative z-2 flex flex-col min-h-[10rem] p-[2.4rem] pointer-events-none'>
                 <h5 className='h5 mb-5'>{about.title}</h5>
                 <p className='body-2 mb-6 text-n-3'>{about.text}</p>
-                <div className='flex items-center mt-auto'>
+                {/* <div className='flex items-center mt-auto'>
                   <img
                     src={about.iconUrl}
                     width={48}
@@ -48,7 +60,7 @@ const About = () => {
                     Explore more
                   </p>
                   <Arrow />
-                </div>
+                </div> */}
               </div>
               {hoveredIndex === index && <GradientLight />}
               <div
@@ -70,6 +82,11 @@ const About = () => {
               <ClipPath />
             </div>
           ))}
+        </div>
+        <div className='w-full text-center'>
+          <Button href='/#'>
+            <span>Explore more {'>'}</span>
+          </Button>
         </div>
       </div>
     </Section>
