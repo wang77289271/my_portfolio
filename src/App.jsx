@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Works from './components/Works'
 import Header from './components/Header'
 import Designs from './components/Designs'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Collaboration />
         <Works />
         <Designs />
+        <Contact />
       </div>
 
       <ButtonGradient />
