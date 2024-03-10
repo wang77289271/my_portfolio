@@ -13,7 +13,7 @@ function App() {
       <div className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'>
         <Navbar />
         <Header />
-        <Hero />
+        {/* <Hero /> */}
         <About />
         <Collaboration />
         <Works />

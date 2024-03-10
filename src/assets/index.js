@@ -1,5 +1,6 @@
 import brainwave from './brainwave.svg'
 import check from './check.svg'
+import close from './close.svg'
 import brainwaveSymbol from './brainwave-symbol.svg'
 import brainwaveWhiteSymbol from './brainwave-symbol-white.svg'
 import play from './play.svg'
@@ -27,14 +28,24 @@ import heroBackground from './hero/hero-background.jpg'
 
 import curve1 from './collaboration/curve-1.svg'
 import curve2 from './collaboration/curve-2.svg'
-import discord from './collaboration/discord.png'
+
 import figma from './collaboration/figma.png'
 import framer from './collaboration/framer.png'
-import notion from './collaboration/notion.png'
-import photoshop from './collaboration/photoshop.png'
-import protopie from './collaboration/protopie.png'
-import raindrop from './collaboration/raindrop.png'
-import slack from './collaboration/slack.png'
+import cms from './collaboration/cms.png'
+import photoshop from './collaboration/Photoshop.png'
+import tailwind from './collaboration/tailwind.png'
+// import sass from './collaboration/sass.png'
+import illustractor from './collaboration/Illustrator.png'
+import materialui from './collaboration/materialui.png'
+
+import javascript from './collaboration/JavaScript.png'
+import reacticon from './collaboration/react.png'
+import docker from './collaboration/docker.png'
+import node from './collaboration/node.png'
+import git from './collaboration/git.png'
+import jest from './collaboration/jest.png'
+import typescript from './collaboration/typescript.png'
+import restapi from './collaboration/restapi.png'
 
 import service1 from './services/service-1.png'
 import service2 from './services/service-2.png'
@@ -75,7 +86,6 @@ import instagram from './socials/instagram.svg'
 import telegram from './socials/telegram.svg'
 import twitter from './socials/twitter.svg'
 
-import circle from './Header/circle.svg'
 import flutter from './Header/flutter.png'
 import profile_2 from './Header/profile_2.png'
 import redux from './Header/redux.png'
@@ -92,6 +102,7 @@ import design_bg_7 from './designs/design-section-bg-7.jpg'
 export {
   brainwave,
   check,
+  close,
   check2,
   loading1,
   brainwaveSymbol,
@@ -117,14 +128,21 @@ export {
   heroBackground,
   curve1,
   curve2,
-  discord,
   figma,
   framer,
-  notion,
+  cms,
   photoshop,
-  protopie,
-  raindrop,
-  slack,
+  tailwind,
+  illustractor,
+  materialui,
+  docker,
+  node,
+  javascript,
+  typescript,
+  git,
+  reacticon,
+  jest,
+  restapi,
   service1,
   service2,
   service3,

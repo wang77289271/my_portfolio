@@ -16,7 +16,10 @@ const Works = () => {
     setHoveredIndex(null)
   }
   return (
-    <Section id='works' className='overflow-hidden block z-5'>
+    <Section
+      id='works'
+      className='overflow-hidden block z-5 border-t-[1px] border-[#26242C]'
+    >
       <div className='container md:pb-10'>
         <Heading
           tag='Ready to get started'

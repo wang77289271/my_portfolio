@@ -43,7 +43,7 @@ const Header = () => {
                 Ye Wang
               </h1>
             </div>
-            {ButtonSvgHeader(300, 124, 'top-0')}
+            {ButtonSvgHeader(300, 124, 'top-0', 0.9, 0)}
           </div>
 
           <div className='flex justify-center items-center py-4 px-8 flex-col w-auto relative mt-12 mr-12'>
@@ -56,7 +56,7 @@ const Header = () => {
             <p className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'>
               Freelancer
             </p>
-            {ButtonSvgHeader(200, 124, 'right-0')}
+            {ButtonSvgHeader(200, 124, 'right-0', 0.7, 0.4)}
           </div>
         </div>
       </motion.div>
@@ -81,15 +81,15 @@ const Header = () => {
       >
         <div className='relative flex justify-center items-center w-[100px] h-[100px]'>
           <img src={flutter} alt='flutter' className='w-[60%] h-[60%]' />
-          {ButtonSvgEllipse(100)}
+          {ButtonSvgEllipse(100, 1, 0)}
         </div>
         <div className='relative flex justify-center items-center w-[150px] h-[150px] m-[1.75rem]'>
           <img src={redux} alt='redux' className='w-[60%] h-[60%]' />
-          {ButtonSvgEllipse(150)}
+          {ButtonSvgEllipse(150, 1, 0.4)}
         </div>
         <div className='relative flex justify-center items-center w-[75px] h-[75px]'>
           <img src={sass} alt='sass' className='w-[60%] h-[60%]' />
-          {ButtonSvgEllipse(75)}
+          {ButtonSvgEllipse(75, 1, 0.2)}
         </div>
       </motion.div>
       {HeaderBgSvg()}
