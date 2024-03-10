@@ -3,7 +3,7 @@ import { images } from '../constants'
 import ButtonSvgHeader from '../assets/svg/ButtonSvgHeader'
 import ButtonSvgEllipse from '../assets/svg/ButtonSvgEllipse'
 import Section from './Section'
-import { BackgroundCircles, HeaderBackgroundCircles } from './design/Hero'
+import { HeaderBackgroundCircles } from './design/Hero'
 import { heroBackground } from '../assets'
 import HeaderBgSvg from '../assets/svg/HeaderBgSvg'
 

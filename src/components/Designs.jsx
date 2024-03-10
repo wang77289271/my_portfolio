@@ -19,6 +19,7 @@ const Designs = () => {
       // crosses
       nopadding
       crossesOffset='lg:translate-y-[5.25rem]'
+      id='design'
       className='w-full h-full border-y-[1px] border-[#26242C]'
     >
       <motion.div

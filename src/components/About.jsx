@@ -18,7 +18,7 @@ const About = () => {
   }
 
   return (
-    <Section id='features'>
+    <Section crosses id='about'>
       <div className='container relative z-2'>
         <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]'>
           <h2 className='h2 mb-6'>
@@ -36,7 +36,7 @@ const About = () => {
           </h2>
         </div>
 
-        <div className='flex justify-center flex-wrap gap-10 mb-10'>
+        <div className='flex flex-wrap gap-10 mb-10'>
           {abouts.map((about, index) => (
             <div
               key={about.id}
@@ -48,18 +48,6 @@ const About = () => {
               <div className='relative z-2 flex flex-col min-h-[10rem] p-[2.4rem] pointer-events-none'>
                 <h5 className='h5 mb-5'>{about.title}</h5>
                 <p className='body-2 mb-6 text-n-3'>{about.text}</p>
-                {/* <div className='flex items-center mt-auto'>
-                  <img
-                    src={about.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={about.title}
-                  />
-                  <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider'>
-                    Explore more
-                  </p>
-                  <Arrow />
-                </div> */}
               </div>
               {hoveredIndex === index && <GradientLight />}
               <div
@@ -83,7 +71,7 @@ const About = () => {
           ))}
         </div>
         <div className='w-full text-center'>
-          <Button href='/#'>
+          <Button href='/#collaboration'>
             <span>Explore more {'>'}</span>
           </Button>
         </div>

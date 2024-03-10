@@ -109,7 +109,7 @@ export const HeaderBackgroundCircles = ({ parallaxRef }) => {
 
   return (
     <div className='absolute w-[78rem] aspect-square border border-n-2/5 rounded-full -translate-x-[100%] md:-top-[38.5rem] xl:-top-[32rem] z-1'>
-      <Rings />
+      {/* <Rings /> */}
 
       {/* Moving background colored circle balls */}
       <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>

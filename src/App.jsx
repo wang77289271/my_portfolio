@@ -7,6 +7,7 @@ import Works from './components/Works'
 import Header from './components/Header'
 import Designs from './components/Designs'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Works />
         <Designs />
         <Contact />
+        <Footer />
       </div>
 
       <ButtonGradient />
