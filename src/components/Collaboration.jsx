@@ -21,12 +21,12 @@ const Collaboration = () => {
   return (
     <Section crosses id='skills'>
       <div className='container lg:flex'>
-        <div className='max-w-[25rem]'>
+        <div className='w-full lg:max-w-[25rem] flex flex-col justify-between'>
           <h2 className='h2 mb-4 md:mb-8'>
             Key <span className='text-[#AC6AFF]'>skills</span> I bring to the
             table
           </h2>
-          <ul className='max-w-[22rem] mb-10 md:mb-14'>
+          <ul className='w-full lg:max-w-[22rem] mb-10 md:mb-14'>
             {collabContent.map((item, index) => (
               <li className='mb-3 py-3' key={item.id}>
                 <div
@@ -56,11 +56,13 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-          <Button>Try it now</Button>
+          <div>
+            <Button href='#works'>My works ↓</Button>
+          </div>
         </div>
 
         <div className='lg:ml-auto xl:w-[38rem] mt-4'>
-          <p className='body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto'>
+          <p className='body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[35rem] lg:mx-auto'>
             {description}
           </p>
 

@@ -99,6 +99,8 @@ import design_bg_5 from './designs/design-section-bg-5.jpg'
 import design_bg_6 from './designs/design-section-bg-6.jpg'
 import design_bg_7 from './designs/design-section-bg-7.jpg'
 
+import designDemo from './myDesigns/designDemo.png'
+
 export {
   brainwave,
   check,
@@ -187,4 +189,5 @@ export {
   design_bg_5,
   design_bg_6,
   design_bg_7,
+  designDemo,
 }

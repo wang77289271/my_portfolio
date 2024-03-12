@@ -47,6 +47,7 @@ import {
   design_bg_5,
   design_bg_6,
   design_bg_7,
+  designDemo,
 } from '../assets'
 
 export const navigation = [
@@ -78,6 +79,33 @@ export const navigation = [
     id: '4',
     title: 'Design',
     url: '#design',
+    onlyMobile: false,
+  },
+  {
+    id: '5',
+    title: 'contact',
+    url: '#contact',
+    onlyMobile: true,
+  },
+]
+
+export const designNavigation = [
+  {
+    id: '0',
+    title: '< Back Home',
+    url: '/',
+    onlyMobile: false,
+  },
+  {
+    id: '1',
+    title: 'Top',
+    url: '#desginHero',
+    onlyMobile: false,
+  },
+  {
+    id: '2',
+    title: 'Designs',
+    url: '#designDemos',
     onlyMobile: false,
   },
   {
@@ -275,42 +303,6 @@ export const uiSkills = [
   },
 ]
 
-export const pricing = [
-  {
-    id: '0',
-    title: 'Basic',
-    description: 'AI chatbot, personalized recommendations',
-    price: '0',
-    features: [
-      'An AI chatbot that can understand your queries',
-      'Personalized recommendations based on your preferences',
-      'Ability to explore the app and its features without any cost',
-    ],
-  },
-  {
-    id: '1',
-    title: 'Premium',
-    description: 'Advanced AI chatbot, priority support, analytics dashboard',
-    price: '9.99',
-    features: [
-      'An advanced AI chatbot that can understand complex queries',
-      'An analytics dashboard to track your conversations',
-      'Priority support to solve issues quickly',
-    ],
-  },
-  {
-    id: '2',
-    title: 'Enterprise',
-    description: 'Custom AI chatbot, advanced analytics, dedicated account',
-    price: null,
-    features: [
-      'An AI chatbot that can understand your queries',
-      'Personalized recommendations based on your preferences',
-      'Ability to explore the app and its features without any cost',
-    ],
-  },
-]
-
 export const abouts = [
   {
     id: '0',
@@ -382,4 +374,42 @@ export const designImages = [
   design_bg_5,
   design_bg_6,
   design_bg_7,
+]
+
+export const designWebsites = [
+  {
+    id: 0,
+    title: 'Bollywood Star Canada',
+    desc: 'Experience the vibrant world of Bollywood dance with Karima Essa, a three-time Canadian National Dance champion, available for workshops, performances, and dance lessons through Pebble Star Artists Inc.',
+    url: 'https://www.bollywoodstarcanada.com/',
+    image: designDemo,
+  },
+  {
+    id: 1,
+    title: 'Korked U-Vin',
+    desc: 'Designed and developed ecommerce and shopping pages for Korked U-Vin, a Premium Estate wine making u-bottle facility and retail supply store, pioneering Ferment on Premise in Alberta.',
+    url: 'https://www.korkeduvin.com/store-private-reserve',
+    image: designDemo,
+  },
+  {
+    id: 2,
+    title: 'Jurassic Mechanical Plumbing & Heating',
+    desc: 'Built the website for Jurassic Mechanical Plumbing & Heating Ltd., a company founded on quality service, integrity, and genuine client relationships.',
+    url: 'https://www.bollywoodstarcanada.com/',
+    image: designDemo,
+  },
+  {
+    id: 3,
+    title: 'Costumagic',
+    desc: 'Built the website for Costumagic, your destination for custom costumes tailored to elevate your performance, whether it is for dance or cosplay.',
+    url: 'https://www.bollywoodstarcanada.com/',
+    image: designDemo,
+  },
+  {
+    id: 4,
+    title: 'Ongoing projects',
+    desc: 'Projects I am still working on like Axial Vertical farming, 67supply, etc. Check out later!',
+    url: false,
+    image: false,
+  },
 ]

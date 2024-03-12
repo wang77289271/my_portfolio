@@ -1,10 +1,12 @@
 import Section from './Section'
 import { motion } from 'framer-motion'
-import PosterHoverWrap from './PosterHoverWrap'
+import PosterHoverWrap from './design/PosterHoverWrap'
 import { designImages } from '../constants'
 import Button from './Button'
+import { useNavigate } from 'react-router-dom'
 
 const Designs = () => {
+  const navigate = useNavigate()
   const [
     design_bg_1,
     design_bg_2,
@@ -16,7 +18,6 @@ const Designs = () => {
   ] = designImages
   return (
     <Section
-      // crosses
       nopadding
       crossesOffset='lg:translate-y-[5.25rem]'
       id='design'
@@ -35,7 +36,7 @@ const Designs = () => {
           <p className='body-1 max-w-3xl mx-auto mb-6 text-n-2 text-[0.8rem] md:text-[1.25rem] lg:mb-8'>
             Head start your stylish website with a gorgeous template
           </p>
-          <Button>View Demos</Button>
+          <Button onClick={() => navigate('/designs')}>View Demos</Button>
         </div>
         <div
           className='flex flex-col gap-[20px] absolute 

@@ -70,11 +70,11 @@ const About = () => {
             </div>
           ))}
         </div>
-        <div className='w-full text-center'>
-          <Button href='/#collaboration'>
+        {/* <div className='w-full text-center'>
+          <Button href='/#works'>
             <span>Explore more {'>'}</span>
           </Button>
-        </div>
+        </div> */}
       </div>
     </Section>
   )

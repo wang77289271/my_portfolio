@@ -27,7 +27,7 @@ const Contact = () => {
       )
   }
   return (
-    <Section crosses className='flex flex-col justify-center'>
+    <Section crosses className='flex flex-col justify-center' id='contact'>
       <Heading title='Take A Coffe & Chat With Me' tag='Contact Me' />
       <div className='w-[80%] md:w-[70%] lg:w-[50%] m-auto'>
         <form ref={form} onSubmit={sendEmail}>

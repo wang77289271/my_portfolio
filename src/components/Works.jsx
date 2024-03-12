@@ -4,6 +4,7 @@ import { works } from '../constants'
 import Heading from './Heading'
 import Section from './Section'
 import TagLine from './TagLine'
+import Button from './Button'
 
 const Works = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
@@ -17,6 +18,7 @@ const Works = () => {
   }
   return (
     <Section
+      crosses
       id='works'
       className='overflow-hidden block z-5 border-t-[1px] border-[#26242C]'
     >
@@ -64,6 +66,9 @@ const Works = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className='w-full text-center mt-6'>
+        <Button href='#design'>↓ My Designs ↓</Button>
       </div>
     </Section>
   )
