@@ -1,21 +1,12 @@
 import Section from './Section'
 import { motion } from 'framer-motion'
 import PosterHoverWrap from './design/PosterHoverWrap'
-import { designImages } from '../constants'
+import { designRotateImages } from '../constants'
 import Button from './Button'
 import { useNavigate } from 'react-router-dom'
 
 const Designs = () => {
   const navigate = useNavigate()
-  const [
-    design_bg_1,
-    design_bg_2,
-    design_bg_3,
-    design_bg_4,
-    design_bg_5,
-    design_bg_6,
-    design_bg_7,
-  ] = designImages
   return (
     <Section
       nopadding
@@ -38,35 +29,29 @@ const Designs = () => {
           </p>
           <Button onClick={() => navigate('/designs')}>View Demos</Button>
         </div>
+
         <div
           className='flex flex-col gap-[20px] absolute 
-        -right-[200%] lg:-right-[100%] xl:-right-[80%] rotate-[45deg] z-2'
+          -right-[200%] lg:-right-[100%] xl:-right-[80%] rotate-[45deg] z-2'
         >
           <div className='w-full flex flex-row gap-[15px] justify-center'>
             <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[44%]'>
-              <img src={design_bg_1} alt='poster-1' />
+              <img src={designRotateImages[0].top[0].image} alt='poster-1' />
             </PosterHoverWrap>
           </div>
           <div className='w-full flex flex-row gap-[15px]'>
-            <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[28%]'>
-              <img src={design_bg_2} alt='poster-2' />
-            </PosterHoverWrap>
-            <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[10%]'>
-              <img src={design_bg_3} alt='poster-3' />
-            </PosterHoverWrap>
-            <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[28%]'>
-              <img src={design_bg_4} alt='poster-4' />
-            </PosterHoverWrap>
-            <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[10%]'>
-              <img src={design_bg_5} alt='poster-5' />
-            </PosterHoverWrap>
-            <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[28%]'>
-              <img src={design_bg_7} alt='poster-7' />
-            </PosterHoverWrap>
+            {designRotateImages[0].mid.map((item) => (
+              <PosterHoverWrap
+                key={item.id}
+                className={`overflow-hidden rounded-md shadow-md border-4 border-white ${item.size}`}
+              >
+                <img src={item.image} alt='poster-2' />
+              </PosterHoverWrap>
+            ))}
           </div>
           <div className='w-full flex flex-row gap-[15px] ml-[12%] justify-center'>
             <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[44%]'>
-              <img src={design_bg_6} alt='poster-6' />
+              <img src={designRotateImages[0].bottom[0].image} alt='poster-6' />
             </PosterHoverWrap>
           </div>
         </div>

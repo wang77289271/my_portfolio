@@ -369,14 +369,33 @@ export const socials = [
 import { flutter, profile_2, redux, sass } from '../assets'
 
 export const images = [flutter, profile_2, redux, sass]
-export const designImages = [
-  design_bg_1,
-  design_bg_2,
-  design_bg_3,
-  design_bg_4,
-  design_bg_5,
-  design_bg_6,
-  design_bg_7,
+
+export const designRotateImages = [
+  {
+    top: [
+      {
+        id: 0,
+        image: design_bg_1,
+        size: 'w-[44%]',
+        alt: 'poster 1',
+      },
+    ],
+    mid: [
+      { id: 1, image: design_bg_2, size: 'w-[28%]', alt: 'poster 2' },
+      { id: 2, image: design_bg_3, size: 'w-[10%]', alt: 'poster 3' },
+      { id: 3, image: design_bg_4, size: 'w-[28%]', alt: 'poster 4' },
+      { id: 4, image: design_bg_5, size: 'w-[10%]', alt: 'poster 5' },
+      { id: 5, image: design_bg_7, size: 'w-[28%]', alt: 'poster 6' },
+    ],
+    bottom: [
+      {
+        id: 6,
+        image: design_bg_6,
+        size: 'w-[44%]',
+        alt: 'poster 7',
+      },
+    ],
+  },
 ]
 
 export const designWebsites = [

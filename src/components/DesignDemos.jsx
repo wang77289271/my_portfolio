@@ -26,7 +26,7 @@ const DesignDemos = () => {
                 index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'
               } flex-1 w-[90%] sm:w-[80%] lg:w-full mx-auto lg:ml-16`}
             >
-              <div className='flex flex-col h-full justify-between py-4 lg:py-6'>
+              <div className='flex flex-col h-full justify-around py-4 lg:py-6'>
                 <hr className='w-full h-[2px] bg-[#26242C] border-0 mt-12 lg:hidden' />
                 <div className='ml-0 mr-4 lg:mr-12'>
                   <h2 className='w-full mb-4 mt-12 lg:mt-0 text-[1.2rem] md:text-[1.5rem] font-normal leading-[2.5rem]'>

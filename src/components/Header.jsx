@@ -4,7 +4,7 @@ import ButtonSvgHeader from '../assets/svg/ButtonSvgHeader'
 import ButtonSvgEllipse from '../assets/svg/ButtonSvgEllipse'
 import Section from './Section'
 import { HeaderBackgroundCircles } from './design/Hero'
-import { heroBackground } from '../assets'
+// import { heroBackground } from '../assets'
 import HeaderBgSvg from '../assets/svg/HeaderBgSvg'
 
 const scaleVariants = {
@@ -77,7 +77,7 @@ const Header = () => {
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         style={{ flex: '0.65' }}
-        className='flex flex-col justify-evenly items-start h-full ml-12 z-2'
+        className='flex flex-row lg:flex-col justify-evenly items-start h-full mt-12 lg:mt-0 lg:ml-12 z-2'
       >
         <div className='relative flex justify-center items-center w-[100px] h-[100px]'>
           <img src={flutter} alt='flutter' className='w-[60%] h-[60%]' />

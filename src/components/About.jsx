@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { abouts } from '../constants'
 import { GradientLight } from './design/Benefits'
 import ClipPath from '../assets/svg/ClipPath'
 import Section from './Section'
 import { curve } from '../assets'
-import Button from './Button'
+// import Button from './Button'
 
 const About = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
@@ -36,11 +36,11 @@ const About = () => {
           </h2>
         </div>
 
-        <div className='flex flex-wrap gap-10 mb-10'>
+        <div className='flex flex-col items-center lg:flex-row gap-10 mb-10 lg:items-stretch'>
           {abouts.map((about, index) => (
             <div
               key={about.id}
-              className='block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]'
+              className='block flex-1 relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[32rem] lg:max-w-[24rem]'
               style={{ backgroundImage: `url(${about.backgroundUrl})` }}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
