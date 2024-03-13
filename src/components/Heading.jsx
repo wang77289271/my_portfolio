@@ -1,4 +1,3 @@
-import React from 'react'
 import TagLine from './TagLine'
 
 const Heading = ({ className, title, tag }) => {

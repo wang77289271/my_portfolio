@@ -99,7 +99,10 @@ import design_bg_5 from './designs/design-section-bg-5.jpg'
 import design_bg_6 from './designs/design-section-bg-6.jpg'
 import design_bg_7 from './designs/design-section-bg-7.jpg'
 
-import designDemo from './myDesigns/designDemo.png'
+import bollywood from './myDesigns/bollywood.png'
+import costumagic from './myDesigns/costumagic.png'
+import jurassic from './myDesigns/jurassic.png'
+import korked from './myDesigns/korked.png'
 
 export {
   brainwave,
@@ -189,5 +192,8 @@ export {
   design_bg_5,
   design_bg_6,
   design_bg_7,
-  designDemo,
+  bollywood,
+  costumagic,
+  jurassic,
+  korked,
 }
