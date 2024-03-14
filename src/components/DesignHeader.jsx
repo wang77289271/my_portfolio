@@ -1,4 +1,3 @@
-import React from 'react'
 import Section from './Section'
 import Button from './Button'
 import myDesignBg from '../assets/myDesigns/myDesignBg.png'

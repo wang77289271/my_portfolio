@@ -6,7 +6,7 @@ import { designWebsites } from '../constants'
 
 const DesignDemos = () => {
   useEffect(() => {
-    // window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
   }, [])
 
   return (
