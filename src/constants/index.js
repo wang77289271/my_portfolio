@@ -119,6 +119,12 @@ export const designNavigation = [
   },
 ]
 
+export const headerTitles = [
+  { id: 0, title: 'Web Developer' },
+  { id: 1, title: 'UX/UI Designer' },
+  { id: 2, title: 'Freelancer' },
+]
+
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare]
 
 export const notificationImages = [notification4, notification3, notification2]

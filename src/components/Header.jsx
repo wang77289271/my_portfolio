@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { images } from '../constants'
+import { headerTitles, images } from '../constants'
 import ButtonSvgHeader from '../assets/svg/ButtonSvgHeader'
 import ButtonSvgEllipse from '../assets/svg/ButtonSvgEllipse'
 import Section from './Section'
@@ -47,15 +47,15 @@ const Header = () => {
           </div>
 
           <div className='flex justify-center items-center py-4 px-8 flex-col w-auto relative mt-12 mr-12'>
-            <p className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'>
-              Web Developer
-            </p>
-            <p className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'>
-              Web Designer
-            </p>
-            <p className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'>
-              Freelancer
-            </p>
+            {headerTitles.map((item) => (
+              <p
+                key={item.id}
+                className='w-full text-[0.8rem] text-right leading-4 uppercase whitespace-nowrap'
+              >
+                {item.title}
+              </p>
+            ))}
+
             {ButtonSvgHeader(200, 124, 'right-0', 0.7, 0.4)}
           </div>
         </div>
