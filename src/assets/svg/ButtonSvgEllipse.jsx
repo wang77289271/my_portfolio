@@ -1,6 +1,6 @@
 import { easeInOut, motion } from 'framer-motion'
 
-const ButtonSvgEllipse = (size, duration, delay) => {
+const ButtonSvgEllipse = (size, duration, delay, className) => {
   const icon = {
     hidden: {
       pathLength: 0,
@@ -12,7 +12,7 @@ const ButtonSvgEllipse = (size, duration, delay) => {
   return (
     <>
       <svg
-        className='absolute'
+        className={`absolute ${className}`}
         width={size}
         height={size}
         viewBox='0 0 245 245'

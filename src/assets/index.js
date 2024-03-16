@@ -88,6 +88,7 @@ import twitter from './socials/twitter.svg'
 
 import flutter from './Header/flutter.png'
 import profile_2 from './Header/profile_2.png'
+import profile_3 from './Header/profile_3.png'
 import redux from './Header/redux.png'
 import sass from './Header/sass.png'
 
@@ -183,6 +184,7 @@ export {
   twitter,
   flutter,
   profile_2,
+  profile_3,
   redux,
   sass,
   design_bg_1,

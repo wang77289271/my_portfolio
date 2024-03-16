@@ -372,9 +372,9 @@ export const socials = [
   },
 ]
 
-import { flutter, profile_2, redux, sass } from '../assets'
+import { flutter, profile_3, redux, sass } from '../assets'
 
-export const images = [flutter, profile_2, redux, sass]
+export const images = [flutter, profile_3, redux, sass]
 
 export const designRotateImages = [
   {
