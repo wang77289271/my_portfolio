@@ -20,7 +20,7 @@ const scaleVariants = {
 
 const Header = () => {
   const parallaxRef = useRef(null)
-  const [flutter, profile_3, redux, sass] = images
+  const [tailwind, profile_3, nextjs, ts_header] = images
   return (
     <Section
       className='pt-[12rem] -mt-[5.25rem]'
@@ -87,25 +87,25 @@ const Header = () => {
                     >
                       <div className='relative flex justify-center items-center w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]'>
                         <img
-                          src={flutter}
+                          src={tailwind}
                           alt='flutter'
-                          className='w-[100%] h-[100%] bg-n-9/80 lg:bg-n-9/40 backdrop-blur rounded-lg lg:rounded-full p-2 lg:p-6'
+                          className='w-[100%] h-[100%] bg-n-9/80 lg:bg-n-9/40 backdrop-blur rounded-lg lg:rounded-full p-2 lg:p-3'
                         />
                         {ButtonSvgEllipse(100, 1, 0, 'hidden lg:block')}
                       </div>
                       <div className='relative flex justify-center items-center w-[50px] h-[50px] lg:w-[150px] lg:h-[150px] lg:m-[1.75rem]'>
                         <img
-                          src={redux}
+                          src={nextjs}
                           alt='redux'
-                          className='w-[100%] h-[100%] bg-n-9/80 lg:bg-n-9/40 backdrop-blur rounded-lg lg:rounded-full p-2 lg:p-6'
+                          className='w-[100%] h-[100%] bg-n-9/80 lg:bg-n-9/40 backdrop-blur rounded-lg lg:rounded-full p-2 lg:p-3'
                         />
                         {ButtonSvgEllipse(150, 1, 0.4, 'hidden lg:block')}
                       </div>
                       <div className='relative flex justify-center items-center w-[50px] h-[50px] lg:w-[75px] lg:h-[75px]'>
                         <img
-                          src={sass}
+                          src={ts_header}
                           alt='sass'
-                          className='w-[100%] h-[100%] bg-n-9/80 lg:bg-n-9/40 backdrop-blur rounded-lg lg:rounded-full p-2 lg:p-6'
+                          className='w-[100%] h-[100%] bg-n-9/80 lg:bg-n-9/40 backdrop-blur rounded-lg lg:rounded-full p-2 lg:p-3'
                         />
                         {ButtonSvgEllipse(75, 1, 0.2, 'hidden lg:block')}
                       </div>

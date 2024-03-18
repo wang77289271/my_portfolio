@@ -34,7 +34,7 @@ import framer from './collaboration/framer.png'
 import cms from './collaboration/cms.png'
 import photoshop from './collaboration/photoshop.png'
 import tailwind from './collaboration/tailwind.png'
-// import sass from './collaboration/sass.png'
+import sass from './collaboration/sass.png'
 import illustractor from './collaboration/Illustrator.png'
 import materialui from './collaboration/materialui.png'
 
@@ -86,11 +86,10 @@ import instagram from './socials/instagram.svg'
 import telegram from './socials/telegram.svg'
 import twitter from './socials/twitter.svg'
 
-import flutter from './Header/flutter.png'
 import profile_2 from './Header/profile_2.png'
 import profile_3 from './Header/profile_3.png'
-import redux from './Header/redux.png'
-import sass from './Header/sass.png'
+import nextjs from './Header/nextjs.png'
+import ts_header from './Header/ts.png'
 
 import design_bg_1 from './designs/design-section-bg-1.jpg'
 import design_bg_2 from './designs/design-section-bg-2.jpg'
@@ -182,11 +181,9 @@ export {
   instagram,
   telegram,
   twitter,
-  flutter,
   profile_2,
   profile_3,
-  redux,
-  sass,
+  nextjs,
   design_bg_1,
   design_bg_2,
   design_bg_3,
@@ -198,4 +195,6 @@ export {
   costumagic,
   jurassic,
   korked,
+  sass,
+  ts_header,
 }

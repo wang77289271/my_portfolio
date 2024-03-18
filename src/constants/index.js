@@ -51,6 +51,10 @@ import {
   bollywood,
   jurassic,
   korked,
+  profile_3,
+  nextjs,
+  sass,
+  ts_header,
 } from '../assets'
 
 export const navigation = [
@@ -372,9 +376,7 @@ export const socials = [
   },
 ]
 
-import { flutter, profile_3, redux, sass } from '../assets'
-
-export const images = [flutter, profile_3, redux, sass]
+export const images = [tailwind, profile_3, nextjs, ts_header]
 
 export const designRotateImages = [
   {
