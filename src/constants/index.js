@@ -3,8 +3,6 @@ import {
   benefitIcon2,
   benefitIcon3,
   benefitImage2,
-  chromecast,
-  disc02,
   discordBlack,
   facebook,
   figma,
@@ -25,21 +23,14 @@ import {
   file02,
   homeSmile,
   instagram,
-  notification2,
-  notification3,
-  notification4,
   plusSquare,
-  recording01,
-  recording03,
   roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
   searchMd,
-  sliders04,
   telegram,
   twitter,
-  yourlogo,
   design_bg_1,
   design_bg_2,
   design_bg_3,
@@ -131,46 +122,34 @@ export const headerTitles = [
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare]
 
-export const notificationImages = [notification4, notification3, notification2]
-
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo]
-
 export const brainwaveServices = [
   'Photo generating',
   'Photo enhance',
   'Seamless Integration',
 ]
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-]
-
 export const works = [
   {
     id: '0',
-    title: 'Voice recognition',
-    text: 'Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.',
-    date: 'May 2023',
+    title: 'Amazon Price Scraping',
+    text: 'Dive into the world of data extraction while building an Amazon product scraping project from scratch. Explore essential concepts and techniques for scraping product details, tracking prices, and sending automated notifications.',
+    date: 'price spy',
     status: 'done',
     imageUrl: roadmap1,
   },
   {
     id: '1',
-    title: 'Gamification',
-    text: 'Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.',
+    title: 'AI Summarizer',
+    text: 'Simplify reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries.',
     date: 'May 2023',
-    status: 'progress',
+    status: 'summarizer',
     imageUrl: roadmap2,
   },
   {
     id: '2',
-    title: 'Chatbot customization',
+    title: 'Weather Forecast',
     text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: 'May 2023',
+    date: 'Weather Forecast',
     status: 'done',
     imageUrl: roadmap3,
   },
