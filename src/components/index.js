@@ -1,7 +1,6 @@
 import About from './About'
 import Collaboration from './Collaboration'
 import Navbar from './Navbar'
-import Hero from './Hero'
 import Works from './Works'
 import Header from './Header'
 import Designs from './Designs'
@@ -13,7 +12,6 @@ export {
   About,
   Collaboration,
   Navbar,
-  Hero,
   Works,
   Header,
   Designs,

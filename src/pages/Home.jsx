@@ -4,7 +4,6 @@ import {
   About,
   Collaboration,
   Navbar,
-  Hero,
   Works,
   Header,
   Designs,
@@ -18,7 +17,6 @@ const Home = () => {
       <div className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'>
         <Navbar navigation={navigation} />
         <Header />
-        {/* <Hero /> */}
         <About />
         <Collaboration />
         <Works />
