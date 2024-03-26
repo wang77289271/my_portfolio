@@ -5,8 +5,10 @@ import Heading from './Heading'
 import Section from './Section'
 import TagLine from './TagLine'
 import Button from './Button'
+import { useNavigate } from 'react-router-dom'
 
 const Works = () => {
+  const navigate = useNavigate()
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   const handleMouseEnter = (index) => {
@@ -35,6 +37,7 @@ const Works = () => {
               className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] 
               ${hoveredIndex === index ? 'bg-conic-gradient' : 'bg-n-6'}`}
               key={work.id}
+              onClick={() => navigate(`project/${work.id}`)}
             >
               <div className='relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15'>
                 <div className='absolute top-0 left-0 max-w-full'>
@@ -48,7 +51,7 @@ const Works = () => {
                 </div>
                 <div className='relative z-1'>
                   <div className='max-w-[27rem] mb-8 md:mb-20'>
-                    <TagLine>{work.date}</TagLine>
+                    <TagLine>{work.name}</TagLine>
                   </div>
                   <div className='mb-10 -my-10 -mx-15'>
                     <img

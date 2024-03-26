@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Section from './Section'
-import { webSkills, uiSkills, collabContent } from '../constants'
+import { webSkills, uiSkills, collabContent, gradientStyle } from '../constants'
 import { brainwaveSymbol, check, close } from '../assets'
 import Button from './Button'
 import { LeftCurve, RightCurve } from './design/Collaboration'
@@ -23,8 +23,7 @@ const Collaboration = () => {
       <div className='container lg:flex'>
         <div className='w-full lg:max-w-[25rem] flex flex-col justify-between'>
           <h2 className='h2 mb-4 md:mb-8'>
-            Key <span className='text-[#AC6AFF]'>skills</span> I bring to the
-            table
+            Key <span style={gradientStyle}>skills</span> I bring to the table
           </h2>
           <ul className='w-full lg:max-w-[22rem] mb-10 md:mb-14'>
             {collabContent.map((item, index) => (

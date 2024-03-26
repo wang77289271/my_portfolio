@@ -87,6 +87,33 @@ export const navigation = [
   },
 ]
 
+export const projectNavigation = [
+  {
+    id: '0',
+    title: '< Back Home',
+    url: '/',
+    onlyMobile: false,
+  },
+  {
+    id: '1',
+    title: 'Top',
+    url: '#desginHero',
+    onlyMobile: false,
+  },
+  {
+    id: '2',
+    title: 'Details',
+    url: '#project-intro',
+    onlyMobile: false,
+  },
+  {
+    id: '5',
+    title: 'contact',
+    url: '#contact',
+    onlyMobile: true,
+  },
+]
+
 export const designNavigation = [
   {
     id: '0',
@@ -130,34 +157,168 @@ export const brainwaveServices = [
 
 export const works = [
   {
-    id: '0',
-    title: 'Amazon Price Scraping',
-    text: 'Dive into the world of data extraction while building an Amazon product scraping project from scratch. Explore essential concepts and techniques for scraping product details, tracking prices, and sending automated notifications.',
-    date: 'price spy',
+    id: 'price-spy',
+    title: 'Price-spy',
+    text: 'Discover Amazon Price Scraping: using data extraction techniques for scraping product details, tracking prices, and automating notifications.',
+    desc: "Crafted on the foundation of Next.js and empowered by Bright Data's webunlocker, this robust e-commerce product scraping platform revolutionizes the way users navigate online markets. Seamlessly integrated, it diligently monitors price fluctuations, ensuring users are promptly notified of advantageous price drops. Moreover, it extends its utility to competitors by promptly alerting them to product stock-outs, all orchestrated effortlessly through the precision of cron jobs.",
+    name: 'price spy',
+    tags: [
+      'Next.js',
+      'Bright Data',
+      'Cheerio',
+      'NodeMailer',
+      'MongoDB',
+      'API',
+      'Tailwind CSS',
+    ],
+    urls: [
+      {
+        name: 'View Demo',
+        url: 'https://pricespy-five.vercel.app/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/wang77289271/pricespy',
+      },
+    ],
+    features: [
+      {
+        name: 'Automated Product Tracking',
+        content:
+          'Stay ahead of the competition by receiving real-time alerts when products drop in price or go out of stock. Our automated tracking system ensures that you never miss a deal or opportunity to capitalize on market trends.',
+      },
+      {
+        name: 'Intuitive User Interface',
+        content:
+          'Enjoy a seamless user experience with our user-friendly interface, designed to make it easy to input product links and track pricing trends. Our intuitive design ensures that users of all levels can navigate the application with ease.',
+      },
+      {
+        name: 'Flexible Data Analysis',
+        content:
+          'Access detailed insights into product details, pricing trends, and historical data. Our flexible data analysis tools empower users to make informed purchasing decisions and gain a competitive edge in the market.',
+      },
+    ],
     status: 'done',
     imageUrl: roadmap1,
   },
   {
-    id: '1',
+    id: 'ai-summarize',
     title: 'AI Summarizer',
     text: 'Simplify reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries.',
-    date: 'May 2023',
-    status: 'summarizer',
+    desc: "Discover a revolutionary tool for simplifying the process of summarizing lengthy articles into concise and digestible summaries with just one click. Whether you're a student looking to quickly extract key information from research papers or a busy professional trying to stay informed, the application has you covered.",
+    name: 'AI Summarizer',
+    tags: ['React.js', 'Typescript', 'Redux Toolkit', 'Tailwind CSS', 'API'],
+    urls: [
+      {
+        name: 'View Demo',
+        url: '#',
+      },
+      {
+        name: 'GitHub',
+        url: '#',
+      },
+    ],
+    features: [
+      {
+        name: 'Summary Generation',
+        content:
+          'Easily generate summaries for any kind of article by simply inputting the URL into our web app. Our powerful AI model leverages advanced natural language processing techniques to provide accurate and coherent summaries that capture the essence of the original content.',
+      },
+      {
+        name: 'History Saving with Local Storage',
+        content:
+          'Keep track of your summarization history with our built-in history feature. Save summaries locally to revisit and manage your reading history conveniently, ensuring that you never lose track of important information.',
+      },
+      {
+        name: 'Advanced RTK Query API Requests',
+        content:
+          'Harness the advanced capabilities of Redux Toolkit (RTK) Query for making API requests. Our application utilizes RTK Query to fire API requests conditionally based on specific criteria, optimizing data fetching and management for a seamless user experience.',
+      },
+    ],
+    status: 'done',
     imageUrl: roadmap2,
   },
   {
-    id: '2',
+    id: 'weather-forecast',
     title: 'Weather Forecast',
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: 'Weather Forecast',
+    text: 'This Weather App is built with React and allows users to get current location weather, search for weather by location, and view weather forecasts.',
+    desc: 'This weather application is a React-based application designed to provide users with easy access to weather information. Whether you want to check the current weather in your location, look up weather forecasts for specific cities, or plan ahead for outdoor activities, our app has you covered.',
+    name: 'Weather Forecast',
+    tags: [
+      'React.js',
+      'API Integration',
+      'OpenWeatherMap API',
+      'GeoDB Cities API',
+      'JavaScript (ES6+)',
+      'Sass',
+    ],
+    urls: [
+      {
+        name: 'View Demo',
+        url: 'https://ye-weather-forecast.netlify.app/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/wang77289271/weather_app',
+      },
+    ],
+    features: [
+      {
+        name: 'Get Current Location Weather',
+        content:
+          "Upon opening the app, users are prompted to allow access to their current location. The app fetches the current weather conditions based on the user's geographical coordinates.",
+      },
+      {
+        name: 'Search Location',
+        content:
+          'Users can search for weather information in any location by typing the city name or zip code into the search bar. The app retrieves the weather data for the specified location.',
+      },
+      {
+        name: 'Weather Forecast',
+        content:
+          'The app provides a weather forecast for the upcoming days, allowing users to plan ahead and stay informed about changes in weather conditions.',
+      },
+    ],
     status: 'done',
     imageUrl: roadmap3,
   },
   {
-    id: '3',
+    id: 'integration-with-apis',
     title: 'Integration with APIs',
     text: 'Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.',
-    date: 'May 2023',
+    name: 'May 2023',
+    tags: [
+      'Next.js',
+      'Bright Data',
+      'Cheerio',
+      'NodeMailer',
+      'MongoDB',
+      'Tailwind CSS',
+    ],
+    urls: [
+      {
+        name: 'View Demo',
+        url: 'https://pricespy-five.vercel.app/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/wang77289271/pricespy',
+      },
+    ],
+    features: [
+      {
+        name: '',
+        content: '',
+      },
+      {
+        name: '',
+        content: '',
+      },
+      {
+        name: '',
+        content: '',
+      },
+    ],
     status: 'progress',
     imageUrl: roadmap4,
   },
@@ -404,14 +565,14 @@ export const designWebsites = [
     id: 2,
     title: 'Jurassic Mechanical Plumbing & Heating',
     desc: 'Built the website for Jurassic Mechanical Plumbing & Heating Ltd., a company founded on quality service, integrity, and genuine client relationships.',
-    url: 'https://www.bollywoodstarcanada.com/',
+    url: 'https://www.jurassicmechanical.com/',
     image: jurassic,
   },
   {
     id: 3,
     title: 'Costumagic',
     desc: 'Built the website for Costumagic, your destination for custom costumes tailored to elevate your performance, whether it is for dance or cosplay.',
-    url: 'https://www.bollywoodstarcanada.com/',
+    url: 'https://www.costumagic.ca/',
     image: costumagic,
   },
   {
@@ -422,3 +583,12 @@ export const designWebsites = [
     image: false,
   },
 ]
+
+export const gradientStyle = {
+  color: '#9820e3',
+  backgroundImage: '-webkit-linear-gradient(0deg, #9820e3 0%, #ffc107 100%)',
+  backgroundClip: 'text',
+  WebkitBackgroundClip: 'text',
+  textFillColor: 'transparent',
+  WebkitTextFillColor: 'transparent',
+}

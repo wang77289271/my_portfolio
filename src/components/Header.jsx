@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { headerTitles, images } from '../constants'
+import { gradientStyle, headerTitles, images } from '../constants'
 import ButtonSvgEllipse from '../assets/svg/ButtonSvgEllipse'
 import Section from './Section'
 import { BackgroundCircles, Gradient } from './design/Hero'
@@ -54,15 +54,15 @@ const Header = () => {
                     <div className='flex justify-center items-center py-4 px-8 flex-row w-auto relative bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl'>
                       <span className='text-[2.5rem]'>👋</span>
                       <div className='ml-4'>
-                        <p className='leading-10 mb-1 text-[0.8rem] text-left whitespace-nowrap'>
+                        <p className='leading-10 mb-1 text-[0.8rem] text-left whitespace-nowrap text-n-2'>
                           Hello, I am
                         </p>
                         <h1 className='text-[2rem] font-extrabold whitespace-nowrap'>
-                          Ye Wang
+                          <span style={gradientStyle}>Ye Wang</span>
                         </h1>
                       </div>
                     </div>
-                    <div className='flex justify-center items-center py-2 px-8 flex-col w-auto relative mt-4 ml-4 lg:ml-0 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl'>
+                    <div className='flex justify-center items-center py-2 px-8 flex-col w-auto relative mt-4 ml-4 lg:ml-0 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl text-n-2'>
                       {headerTitles.map((item) => (
                         <p
                           key={item.id}

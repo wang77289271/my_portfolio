@@ -1,7 +1,7 @@
 import Section from './Section'
 import { motion } from 'framer-motion'
 import PosterHoverWrap from './design/PosterHoverWrap'
-import { designRotateImages } from '../constants'
+import { designRotateImages, gradientStyle } from '../constants'
 import Button from './Button'
 import { useNavigate } from 'react-router-dom'
 
@@ -21,8 +21,8 @@ const Designs = () => {
       >
         <div className='z-3 ml-12 lg:ml-16'>
           <h2 className='mb-6 text-[1.25rem] md:text-[2.25rem] font-bold leading-[2.5rem]'>
-            I know that <span className='text-[#AC6AFF]'>Good Design</span>{' '}
-            <br /> means <span className='text-[#AC6AFF]'>Good Business</span>
+            I know that <span style={gradientStyle}>Good Design</span> <br />{' '}
+            means <span style={gradientStyle}>Good Business</span>
           </h2>
           <p className='body-1 max-w-3xl mx-auto mb-6 text-n-2 text-[0.8rem] md:text-[1.25rem] lg:mb-8'>
             Head start your stylish website with a gorgeous template
