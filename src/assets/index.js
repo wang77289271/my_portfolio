@@ -45,7 +45,8 @@ import done from './roadmap/done.svg'
 import hero from './roadmap/hero.png'
 // import roadmap1 from './roadmap/image-1.png'
 import pricespy_cover from './projects/pricespy_cover.png'
-import roadmap2 from './roadmap/image-2.png'
+// import roadmap2 from './roadmap/image-2.png'
+import ai_summarize_cover from './projects/ai_summarize_cover.png'
 import roadmap3 from './roadmap/image-3.png'
 import roadmap4 from './roadmap/image-4.png'
 import undone from './roadmap/undone.svg'
@@ -128,7 +129,8 @@ export {
   hero,
   // roadmap1,
   pricespy_cover,
-  roadmap2,
+  // roadmap2,
+  ai_summarize_cover,
   roadmap3,
   roadmap4,
   undone,

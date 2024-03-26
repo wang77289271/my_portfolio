@@ -25,7 +25,7 @@ import {
   instagram,
   plusSquare,
   // roadmap1,
-  roadmap2,
+  // roadmap2,
   roadmap3,
   roadmap4,
   searchMd,
@@ -47,6 +47,7 @@ import {
   sass,
   ts_header,
   pricespy_cover,
+  ai_summarize_cover,
 } from '../assets'
 
 export const navigation = [
@@ -231,7 +232,7 @@ export const works = [
       },
     ],
     status: 'done',
-    imageUrl: roadmap2,
+    imageUrl: ai_summarize_cover,
   },
   {
     id: 'weather-forecast',
