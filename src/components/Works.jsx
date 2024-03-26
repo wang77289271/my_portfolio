@@ -35,7 +35,9 @@ const Works = () => {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
               className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] 
-              ${hoveredIndex === index ? 'bg-conic-gradient' : 'bg-n-6'}`}
+              ${
+                hoveredIndex === index ? 'bg-conic-gradient' : 'bg-n-6'
+              } cursor-pointer`}
               key={work.id}
               onClick={() => navigate(`project/${work.id}`)}
             >
@@ -55,10 +57,10 @@ const Works = () => {
                   </div>
                   <div className='mb-10 -my-10 -mx-15'>
                     <img
-                      className='w-full'
+                      className='w-[80%] mx-auto mt-16'
                       src={work.imageUrl}
-                      width={628}
-                      height={426}
+                      width={314}
+                      height={213}
                       alt={work.title}
                     />
                   </div>

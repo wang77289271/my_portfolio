@@ -1,14 +1,9 @@
 import Section from './Section'
 import Heading from './Heading'
 import Button from './Button'
-import { useEffect } from 'react'
 import { designWebsites } from '../constants'
 
 const DesignDemos = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   return (
     <div>
       <Section crosses nopadding id='designDemos'>

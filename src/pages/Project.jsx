@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import { easeInOut, motion } from 'framer-motion'
 
 import ButtonGradient from '../assets/svg/ButtonGradient'
 import { Contact, Footer, Navbar } from '../components'
@@ -9,7 +10,10 @@ import { useEffect } from 'react'
 
 const Project = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant',
+    })
   }, [])
 
   const { id } = useParams()
@@ -17,13 +21,18 @@ const Project = () => {
 
   return (
     <>
-      <div className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, ease: easeInOut }}
+        className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'
+      >
         <Navbar navigation={projectNavigation} />
         {project && <ProjectHeader project={project} />}
         {project && <ProjectContent project={project} />}
         <Contact />
         <Footer />
-      </div>
+      </motion.div>
+
       <ButtonGradient />
     </>
   )

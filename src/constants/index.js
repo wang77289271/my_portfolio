@@ -157,7 +157,7 @@ export const works = [
     title: 'Price-spy',
     text: 'Discover Amazon Price Scraping: using data extraction techniques for scraping product details, tracking prices, and automating notifications.',
     desc: "Crafted on the foundation of Next.js and empowered by Bright Data's webunlocker, this robust e-commerce product scraping platform revolutionizes the way users navigate online markets. Seamlessly integrated, it diligently monitors price fluctuations, ensuring users are promptly notified of advantageous price drops. Moreover, it extends its utility to competitors by promptly alerting them to product stock-outs, all orchestrated effortlessly through the precision of cron jobs.",
-    name: 'price spy',
+    name: 'Price spy',
     tags: [
       'Next.js',
       'Bright Data',
