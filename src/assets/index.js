@@ -43,7 +43,8 @@ import restapi from './collaboration/restapi.png'
 import coins from './roadmap/coins.png'
 import done from './roadmap/done.svg'
 import hero from './roadmap/hero.png'
-import roadmap1 from './roadmap/image-1.png'
+// import roadmap1 from './roadmap/image-1.png'
+import pricespy_cover from './projects/pricespy_cover.png'
 import roadmap2 from './roadmap/image-2.png'
 import roadmap3 from './roadmap/image-3.png'
 import roadmap4 from './roadmap/image-4.png'
@@ -125,7 +126,8 @@ export {
   coins,
   done,
   hero,
-  roadmap1,
+  // roadmap1,
+  pricespy_cover,
   roadmap2,
   roadmap3,
   roadmap4,

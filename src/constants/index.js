@@ -24,7 +24,7 @@ import {
   homeSmile,
   instagram,
   plusSquare,
-  roadmap1,
+  // roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
@@ -46,6 +46,7 @@ import {
   nextjs,
   sass,
   ts_header,
+  pricespy_cover,
 } from '../assets'
 
 export const navigation = [
@@ -193,7 +194,7 @@ export const works = [
       },
     ],
     status: 'done',
-    imageUrl: roadmap1,
+    imageUrl: pricespy_cover,
   },
   {
     id: 'ai-summarize',
