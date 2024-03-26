@@ -1,4 +1,4 @@
-import { brainwave } from '../assets'
+import { logo_name_2 } from '../assets'
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
 import { Link, useLocation } from 'react-router-dom'
@@ -35,7 +35,7 @@ const Navbar = ({ navigation }) => {
     >
       <div className='flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4'>
         <Link className='block w-[12rem] xl:mr-8' to='/'>
-          <img src={brainwave} width={190} height={40} alt='Ye Wang' />
+          <img src={logo_name_2} width={60} height={40} alt='Ye Wang' />
         </Link>
         <nav
           className={`${

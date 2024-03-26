@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Section from './Section'
 import { webSkills, uiSkills, collabContent, gradientStyle } from '../constants'
-import { brainwaveSymbol, check, close } from '../assets'
+import { check, close, logo_name_1 } from '../assets'
 import Button from './Button'
 import { LeftCurve, RightCurve } from './design/Collaboration'
 import { easeInOut, motion } from 'framer-motion'
@@ -70,7 +70,7 @@ const Collaboration = () => {
               <div className='w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full'>
                 <div className='flex items-center justify-center w-full h-full bg-n-8 rounded-full'>
                   <img
-                    src={brainwaveSymbol}
+                    src={logo_name_1}
                     width={48}
                     height={48}
                     alt='brainwave'

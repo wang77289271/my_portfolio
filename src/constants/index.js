@@ -149,12 +149,6 @@ export const headerTitles = [
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare]
 
-export const brainwaveServices = [
-  'Photo generating',
-  'Photo enhance',
-  'Seamless Integration',
-]
-
 export const works = [
   {
     id: 'price-spy',
