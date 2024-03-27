@@ -52,6 +52,7 @@ const Contact = () => {
               placeholder='Your Name'
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
           </div>
           <div>
@@ -62,6 +63,7 @@ const Contact = () => {
               placeholder='Your Email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
           <div>
@@ -71,6 +73,7 @@ const Contact = () => {
               placeholder='Your Message'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             />
           </div>
           {isSent ? (
@@ -82,7 +85,7 @@ const Contact = () => {
             </div>
           ) : (
             <Button className='w-full' type='submit'>
-              Send
+              {isSent ? 'Sending...' : 'Send'}
             </Button>
           )}
         </form>
