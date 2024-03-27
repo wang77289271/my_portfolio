@@ -1,11 +1,16 @@
-import React, { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Section from './Section'
 import Heading from './Heading'
-import ButtonSvg from '../assets/svg/ButtonSvg'
+import Button from './Button'
+import { gradientStyle } from '../constants'
 
 const Contact = () => {
   const form = useRef()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [isSent, setIsSent] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -25,6 +30,14 @@ const Contact = () => {
           console.log(error.text)
         }
       )
+
+    setName('')
+    setEmail('')
+    setMessage('')
+    setIsSent(true)
+    setTimeout(() => {
+      setIsSent(false)
+    }, 3000)
   }
   return (
     <Section crosses className='flex flex-col justify-center' id='contact'>
@@ -37,6 +50,8 @@ const Contact = () => {
               type='text'
               name='name'
               placeholder='Your Name'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div>
@@ -45,6 +60,8 @@ const Contact = () => {
               type='email'
               name='email'
               placeholder='Your Email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div>
@@ -52,12 +69,22 @@ const Contact = () => {
               className='w-full px-6 py-4 rounded-lg text-8 font-light mb-4 placeholder:text-[0.8rem]'
               name='message'
               placeholder='Your Message'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <div className='button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 px-7 w-full'>
-            <input type='submit' value='Send' />
-            {ButtonSvg()}
-          </div>
+          {isSent ? (
+            <div className='w-full text-center'>
+              <p style={gradientStyle} className='text-[1rem] lg:text-[1.2rem]'>
+                Thank you for contacting me. <br className='sm:hidden' />I will
+                get back to you shortly.
+              </p>
+            </div>
+          ) : (
+            <Button className='w-full' type='submit'>
+              Send
+            </Button>
+          )}
         </form>
       </div>
     </Section>
