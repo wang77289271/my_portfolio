@@ -213,11 +213,11 @@ export const works = [
     urls: [
       {
         name: 'View Demo',
-        url: '#',
+        url: 'https://ye-ai-summarizer.netlify.app/',
       },
       {
         name: 'GitHub',
-        url: '#',
+        url: 'https://github.com/wang77289271/ai_summarizer',
       },
     ],
     features: [
