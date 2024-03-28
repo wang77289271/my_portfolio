@@ -27,7 +27,7 @@ import {
   // roadmap1,
   // roadmap2,
   // roadmap3,
-  roadmap4,
+  // roadmap4,
   searchMd,
   telegram,
   twitter,
@@ -50,6 +50,7 @@ import {
   ai_summarize_cover,
   weather_cover,
   pricespy_feature_img_1,
+  portfolio_feature,
 } from '../assets'
 
 export const navigation = [
@@ -164,6 +165,7 @@ export const works = [
       'Next.js',
       'Bright Data',
       'Cheerio',
+      'TypeScript',
       'NodeMailer',
       'MongoDB',
       'API',
@@ -252,6 +254,7 @@ export const works = [
       'GeoDB Cities API',
       'JavaScript (ES6+)',
       'Sass',
+      'Figma',
     ],
     urls: [
       {
@@ -285,17 +288,17 @@ export const works = [
     featureImg: weather_cover,
   },
   {
-    id: 'integration-with-apis',
-    title: 'Integration with APIs',
-    text: 'Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.',
-    name: 'May 2023',
+    id: 'portfolio',
+    title: 'My Portfolio',
+    text: 'Embark on a journey through my digital realm with my personal portfolio website. Crafted with passion and precision, this website serves as a showcase of my skills, projects, and accomplishments of web development and design.',
+    desc: 'Discover my meticulously crafted portfolio website, featuring a responsive layout and a modern, professional design. This platform serves as a showcase of my skills, projects, and achievements in web development and design. Explore with ease, delve into project showcases, and witness the culmination of my passion for creating impactful digital experiences.',
+    name: 'portfolio',
     tags: [
-      'Next.js',
-      'Bright Data',
-      'Cheerio',
-      'NodeMailer',
-      'MongoDB',
+      'React.js',
+      'JavaScript (ES6+)',
+      'Framer Motion',
       'Tailwind CSS',
+      'React Router',
     ],
     urls: [
       {
@@ -309,20 +312,24 @@ export const works = [
     ],
     features: [
       {
-        name: '',
-        content: '',
+        name: 'Sleek and Professional Design',
+        content:
+          'Immerse yourself in the sleek and professional design of my portfolio website, reflecting my commitment to excellence in web development and design.',
       },
       {
-        name: '',
-        content: '',
+        name: 'Responsive Layout',
+        content:
+          'Enjoy a seamless browsing experience across devices with a responsive website layout that adapts to desktops, tablets, and smartphones',
       },
       {
-        name: '',
-        content: '',
+        name: 'Project Showcase',
+        content:
+          'Explore a curated collection of my projects, each accompanied by detailed descriptions, screenshots, and links to live demos or GitHub repositories.',
       },
     ],
     status: 'progress',
-    imageUrl: roadmap4,
+    imageUrl: profile_3,
+    featureImg: portfolio_feature,
   },
 ]
 

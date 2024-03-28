@@ -92,6 +92,7 @@ import logo_name_1 from './ye_name_1.png'
 import logo_name_2 from './ye_name_2.png'
 
 import pricespy_feature_img_1 from './projects/pricespy_features_1.png'
+import portfolio_feature from './projects/portfolio_features.jpg'
 
 export {
   check,
@@ -173,4 +174,5 @@ export {
   logo_name_1,
   logo_name_2,
   pricespy_feature_img_1,
+  portfolio_feature,
 }
