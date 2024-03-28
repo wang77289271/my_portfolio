@@ -51,6 +51,7 @@ import {
   weather_cover,
   pricespy_feature_img_1,
   portfolio_feature,
+  ai_summarize_feature_1,
 } from '../assets'
 
 export const navigation = [
@@ -237,9 +238,9 @@ export const works = [
       },
     ],
     status: 'done',
-    imageUrl: ai_summarize_cover,
-    adjuestImgSize: 'w-[50%]',
-    featureImg: '',
+    imageUrl: ai_summarize_feature_1,
+    adjuestImgSize: 'w-[80%] py-12',
+    featureImg: ai_summarize_cover,
   },
   {
     id: 'weather-forecast',
