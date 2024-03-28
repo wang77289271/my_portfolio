@@ -24,22 +24,23 @@ const Designs = () => {
             I know that <span style={gradientStyle}>Good Design</span> <br />{' '}
             means <span style={gradientStyle}>Good Business</span>
           </h2>
-          <p className='body-1 max-w-3xl mx-auto mb-6 text-n-2 text-[0.8rem] md:text-[1.25rem] lg:mb-8'>
-            Head start your stylish website with a gorgeous template
+          <p className='body-1 max-w-2xl mx-auto mb-6 text-n-2 text-[0.8rem] md:text-[1.25rem] lg:mb-8'>
+            Explore how effective design can elevate your projects and captivate
+            your audience.
           </p>
           <Button onClick={() => navigate('/designs')}>View Demos</Button>
         </div>
 
         <div
-          className='flex flex-col gap-[20px] absolute 
+          className='flex flex-col gap-[10px] absolute 
           -right-[200%] lg:-right-[100%] xl:-right-[80%] rotate-[45deg] z-2'
         >
-          <div className='w-full flex flex-row gap-[15px] justify-center'>
+          <div className='w-full flex flex-row gap-[10px] justify-center'>
             <PosterHoverWrap className='overflow-hidden rounded-md shadow-md border-4 border-white w-[44%]'>
               <img src={designRotateImages[0].top[0].image} alt='poster-1' />
             </PosterHoverWrap>
           </div>
-          <div className='w-full flex flex-row gap-[15px]'>
+          <div className='w-full flex flex-row gap-[10px]'>
             {designRotateImages[0].mid.map((item) => (
               <PosterHoverWrap
                 key={item.id}
