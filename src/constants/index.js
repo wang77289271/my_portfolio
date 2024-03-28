@@ -238,9 +238,9 @@ export const works = [
       },
     ],
     status: 'done',
-    imageUrl: ai_summarize_feature_1,
-    adjuestImgSize: 'w-[80%] py-12',
-    featureImg: ai_summarize_cover,
+    imageUrl: ai_summarize_cover,
+    adjuestImgSize: 'w-[80%]',
+    featureImg: ai_summarize_feature_1,
   },
   {
     id: 'weather-forecast',
