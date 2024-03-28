@@ -300,7 +300,7 @@ export const works = [
     urls: [
       {
         name: 'View Demo',
-        url: 'https://pricespy-five.vercel.app/',
+        url: '/',
       },
       {
         name: 'GitHub',

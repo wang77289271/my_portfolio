@@ -49,7 +49,7 @@ const Header = () => {
                   <motion.ul
                     whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                     transition={{ duration: 0.5 }}
-                    className='absolute -top-[8rem] lg:-left-[12.5rem] lg:bottom-[15.5rem] px-1 py-1 flex lg:flex-col sm:items-end'
+                    className='absolute -top-[8rem] lg:-left-[12.5rem] lg:bottom-[15.5rem] px-1 py-1 flex flex-col md:flex-row lg:flex-col sm:items-end'
                   >
                     <div className='flex justify-center items-center py-4 px-8 flex-row w-auto relative bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl'>
                       <span className='text-[2.5rem]'>👋</span>
@@ -78,7 +78,7 @@ const Header = () => {
                   <motion.ul
                     variants={scaleVariants}
                     whileInView={scaleVariants.whileInView}
-                    className='hidden absolute right-4 lg:-right-[14rem] bottom-[2rem] lg:bottom-[5.5rem] px-1 py-1  sm:flex sm:flex-col sm:items-end'
+                    className='hidden absolute right-4 lg:-right-[14rem] bottom-[0rem] lg:bottom-[5.5rem] px-1 py-1  sm:flex sm:flex-col sm:items-end'
                   >
                     <div
                       className='flex flex-row lg:flex-col justify-evenly items-start h-full mt-12 lg:mt-0 lg:ml-12 z-2
