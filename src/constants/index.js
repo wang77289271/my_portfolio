@@ -26,7 +26,7 @@ import {
   plusSquare,
   // roadmap1,
   // roadmap2,
-  roadmap3,
+  // roadmap3,
   roadmap4,
   searchMd,
   telegram,
@@ -48,6 +48,8 @@ import {
   ts_header,
   pricespy_cover,
   ai_summarize_cover,
+  weather_cover,
+  pricespy_feature_img_1,
 } from '../assets'
 
 export const navigation = [
@@ -196,6 +198,7 @@ export const works = [
     ],
     status: 'done',
     imageUrl: pricespy_cover,
+    featureImg: pricespy_feature_img_1,
   },
   {
     id: 'ai-summarize',
@@ -233,6 +236,8 @@ export const works = [
     ],
     status: 'done',
     imageUrl: ai_summarize_cover,
+    adjuestImgSize: 'w-[50%]',
+    featureImg: '',
   },
   {
     id: 'weather-forecast',
@@ -276,7 +281,8 @@ export const works = [
       },
     ],
     status: 'done',
-    imageUrl: roadmap3,
+    imageUrl: weather_cover,
+    featureImg: weather_cover,
   },
   {
     id: 'integration-with-apis',

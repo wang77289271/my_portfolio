@@ -1,5 +1,4 @@
 import Section from './Section'
-import myDesignBg from '../assets/myDesigns/myDesignBg.png'
 import Button from './Button'
 import { gradientStyle } from '../constants'
 
@@ -31,7 +30,11 @@ const ProjectHeader = ({ project }) => {
           </div>
         </div>
         <div className='flex-1'>
-          <img src={myDesignBg} alt='mydesigns background' />
+          <img
+            src={project.imageUrl}
+            alt='mydesigns background'
+            className='w-[80%]'
+          />
         </div>
       </div>
     </Section>

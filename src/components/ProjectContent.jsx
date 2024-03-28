@@ -1,5 +1,4 @@
 import Section from './Section'
-import priceSpy_1 from '../assets/projects/price-spy-1.png'
 import Button from './Button'
 
 const ProjectContent = ({ project }) => {
@@ -33,8 +32,8 @@ const ProjectContent = ({ project }) => {
           </div>
           <div className='flex-1 m-4 order-1 lg:order-2'>
             <img
-              src={priceSpy_1}
-              alt='price spy'
+              src={project.featureImg}
+              alt={project.title}
               className='w-full h-auto mb-12 lg:m-0'
             />
           </div>

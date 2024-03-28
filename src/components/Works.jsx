@@ -4,7 +4,6 @@ import { works } from '../constants'
 import Heading from './Heading'
 import Section from './Section'
 import TagLine from './TagLine'
-import Button from './Button'
 import { useNavigate } from 'react-router-dom'
 
 const Works = () => {
@@ -57,7 +56,9 @@ const Works = () => {
                   </div>
                   <div className='mb-10 -my-10 -mx-15'>
                     <img
-                      className='w-[80%] mx-auto mt-16'
+                      className={`${
+                        work.adjuestImgSize ? work.adjuestImgSize : 'w-[80%]'
+                      }  mx-auto mt-16`}
                       src={work.imageUrl}
                       width={314}
                       height={213}
@@ -73,7 +74,10 @@ const Works = () => {
         </div>
       </div>
       <div className='w-full text-center mt-6'>
-        <Button href='#design'>↓ My Designs ↓</Button>
+        {/* <Button href='#design'>↓ My Designs ↓</Button> */}
+        <a href='#design' className='text-[1.2rem] text-[#AC6AFF]'>
+          See more projects 👇
+        </a>
       </div>
     </Section>
   )

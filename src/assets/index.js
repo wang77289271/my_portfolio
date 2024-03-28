@@ -47,7 +47,8 @@ import hero from './roadmap/hero.png'
 import pricespy_cover from './projects/pricespy_cover.png'
 // import roadmap2 from './roadmap/image-2.png'
 import ai_summarize_cover from './projects/ai_summarize_cover.png'
-import roadmap3 from './roadmap/image-3.png'
+// import roadmap3 from './roadmap/image-3.png'
+import weather_cover from './projects/weather_app_demo.png'
 import roadmap4 from './roadmap/image-4.png'
 import undone from './roadmap/undone.svg'
 
@@ -90,6 +91,8 @@ import korked from './myDesigns/korked.png'
 import logo_name_1 from './ye_name_1.png'
 import logo_name_2 from './ye_name_2.png'
 
+import pricespy_feature_img_1 from './projects/pricespy_features_1.png'
+
 export {
   check,
   close,
@@ -131,7 +134,8 @@ export {
   pricespy_cover,
   // roadmap2,
   ai_summarize_cover,
-  roadmap3,
+  // roadmap3,
+  weather_cover,
   roadmap4,
   undone,
   benefitCard1,
@@ -168,4 +172,5 @@ export {
   ts_header,
   logo_name_1,
   logo_name_2,
+  pricespy_feature_img_1,
 }
