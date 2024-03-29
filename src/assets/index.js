@@ -1,7 +1,6 @@
 import check from './check.svg'
 import close from './close.svg'
 
-import gradient from './gradient.png'
 import smallSphere from './4-small.png'
 import grid from './grid.png'
 import check2 from './check-02.svg'
@@ -58,7 +57,7 @@ import benefitIcon1 from './benefits/icon-1.svg'
 import benefitIcon2 from './benefits/icon-2.svg'
 import benefitIcon3 from './benefits/icon-3.svg'
 import benefitIcon4 from './benefits/icon-4.svg'
-import benefitImage2 from './benefits/image-2.png'
+import benefitImage2 from './benefits/image-2.jpg'
 
 import discordBlack from './socials/discord.svg'
 import facebook from './socials/facebook.svg'
@@ -66,8 +65,8 @@ import instagram from './socials/instagram.svg'
 import telegram from './socials/telegram.svg'
 import twitter from './socials/twitter.svg'
 
-import profile_2 from './Header/profile_2.png'
-import profile_3 from './Header/profile_3.png'
+// import profile_3 from './Header/profile_3.png'
+import profile_3 from './Header/portrait.png'
 import nextjs from './Header/nextjs.png'
 import ts_header from './Header/ts.png'
 
@@ -96,7 +95,6 @@ export {
   close,
   check2,
   loading1,
-  gradient,
   smallSphere,
   grid,
   homeSmile,
@@ -148,7 +146,6 @@ export {
   instagram,
   telegram,
   twitter,
-  profile_2,
   profile_3,
   nextjs,
   design_bg_1,
