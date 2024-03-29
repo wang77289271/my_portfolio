@@ -40,8 +40,8 @@ const About = () => {
           {abouts.map((about, index) => (
             <div
               key={about.id}
-              className='block flex-1 relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[32rem] lg:max-w-[24rem]'
               style={{ backgroundImage: `url(${about.backgroundUrl})` }}
+              className={`block flex-1 relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[32rem] lg:max-w-[24rem]`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
