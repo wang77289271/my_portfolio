@@ -48,6 +48,9 @@ import {
   pricespy_feature_img_1,
   portfolio_feature,
   ai_summarize_feature_1,
+  benefitCard1,
+  benefitCard2,
+  benefitCard3,
 } from '../assets'
 
 export const navigation = [
@@ -467,7 +470,7 @@ export const abouts = [
     id: '0',
     title: 'Web Development',
     text: 'As a web developer, I craft user-focused digital experiences with expertise in responsive web technologies.',
-    backgroundUrl: './src/assets/benefits/card-1.svg',
+    backgroundUrl: benefitCard1,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
@@ -475,7 +478,7 @@ export const abouts = [
     id: '1',
     title: 'UX/UI',
     text: 'UX/UI design is about creating intuitive and visually appealing digital interfaces. I blend user insights with modern design principles to craft seamless and delightful experiences.',
-    backgroundUrl: './src/assets/benefits/card-2.svg',
+    backgroundUrl: benefitCard2,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
@@ -483,7 +486,7 @@ export const abouts = [
     id: '2',
     title: 'Responsive Design',
     text: 'Responsive design ensures optimal user experiences across devices. Using flexible layouts and media queries, I create websites that adapt beautifully to any screen size.',
-    backgroundUrl: './src/assets/benefits/card-3.svg',
+    backgroundUrl: benefitCard3,
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
