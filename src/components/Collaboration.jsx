@@ -47,7 +47,7 @@ const Collaboration = () => {
                     whileInView={{ y: [15, 0], opacity: [0, 1] }}
                     transition={{ duration: 0.5, ease: easeInOut }}
                   >
-                    <p className='body-2 mt-3 text-n-4 tracking-[0.2px]'>
+                    <p className='body-2 mt-3 text-n-3 tracking-[0.2px]'>
                       {item.text}
                     </p>
                   </motion.div>
@@ -61,7 +61,7 @@ const Collaboration = () => {
         </div>
 
         <div className='lg:ml-auto xl:w-[38rem] mt-4'>
-          <p className='body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[35rem] lg:mx-auto'>
+          <p className='body-2 mb-8 text-n-3 md:mb-16 lg:mb-32 lg:w-[35rem] lg:mx-auto'>
             {description}
           </p>
 
