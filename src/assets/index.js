@@ -65,8 +65,7 @@ import instagram from './socials/instagram.svg'
 import telegram from './socials/telegram.svg'
 import twitter from './socials/twitter.svg'
 
-// import profile_3 from './Header/profile_3.png'
-import profile_3 from './Header/portrait.png'
+import profile_3 from './Header/profile_3.png'
 import nextjs from './Header/nextjs.png'
 import ts_header from './Header/ts.png'
 
