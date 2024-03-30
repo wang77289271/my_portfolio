@@ -7,7 +7,7 @@ const ProjectHeader = ({ project }) => {
     <Section id='projectHero'>
       <div className='flex flex-col lg:flex-row items-center'>
         <div className='flex flex-1 flex-col items-start z-3 md:ml-12 md:mr-12 lg:ml-16'>
-          <div className='ml-0 lg:ml-12'>
+          <div className='ml-4 mr-4 lg:ml-12'>
             <h2 className='w-full lg:w-[80%] mb-4 text-[1.8rem] md:text-[2.25rem] lg:text-[2.5rem] font-bold leading-[3.5rem]'>
               <span style={gradientStyle}>{project.title}</span>
             </h2>

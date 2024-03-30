@@ -36,7 +36,7 @@ const Navbar = ({ navigation }) => {
       <div className='flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4'>
         <Link className='block w-[12rem] xl:mr-8' to='/'>
           <img
-            className='mx-auto'
+            className='sm:mx-auto'
             src={logo_name_2}
             width={60}
             height={40}

@@ -10,6 +10,7 @@ const DesignDemos = () => {
         <Heading
           tag='Ready to get started'
           title='My Creative Design Section'
+          className='mx-4 md:mx-0'
         />
         {designWebsites.map((item, index) => (
           <div
