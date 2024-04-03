@@ -287,7 +287,7 @@ export const works = [
     ],
     status: 'done',
     imageUrl: ai_summarize_cover,
-    adjuestImgSize: 'w-[80%]',
+    adjuestImgSize: 'w-[50%]',
     featureImg: ai_summarize_feature_1,
   },
   {
