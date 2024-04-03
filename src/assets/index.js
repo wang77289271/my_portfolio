@@ -88,6 +88,8 @@ import logo_name_2 from './ye_name_2.png'
 import pricespy_feature_img_1 from './projects/pricespy_features_1.png'
 import portfolio_feature from './projects/portfolio_features.jpg'
 import ai_summarize_feature_1 from './projects/ai_summarize_feature_1.png'
+import horizoncall_cover from './projects/horizoncall_cover.jpg'
+import horizoncall_feature from './projects/horizoncall_feature.png'
 
 export {
   check,
@@ -165,4 +167,6 @@ export {
   pricespy_feature_img_1,
   portfolio_feature,
   ai_summarize_feature_1,
+  horizoncall_cover,
+  horizoncall_feature,
 }

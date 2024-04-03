@@ -48,6 +48,8 @@ import {
   pricespy_feature_img_1,
   portfolio_feature,
   ai_summarize_feature_1,
+  horizoncall_cover,
+  horizoncall_feature,
 } from '../assets'
 
 export const navigation = [
@@ -152,6 +154,56 @@ export const headerTitles = [
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare]
 
 export const works = [
+  {
+    id: 'horizon-call',
+    title: 'Horizon Call',
+    text: 'Next.js and TypeScript-powered video conferencing. Simplifying remote collaboration with intuitive features and secure authentication.',
+    desc: "Welcome to HorizonCall, your go-to solution for seamless video conferencing and collaboration. Crafted with the latest technologies including Next.js and TypeScript, HorizonCall redefines the way teams connect and communicate remotely. Whether you're hosting a business meeting, conducting virtual workshops, or catching up with friends and family, HorizonCall offers a feature-rich platform that prioritizes user experience and security.",
+    name: 'Horizon Call',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Clerk',
+      'GetStreamio',
+      'shadcn UI',
+      'Tailwind CSS',
+    ],
+    urls: [
+      {
+        name: 'View Demo',
+        url: 'https://horizoncall.vercel.app/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/wang77289271/horizoncall',
+      },
+    ],
+    features: [
+      {
+        name: 'Secure Authentication',
+        content:
+          'Robust authentication mechanisms ensure secure access for users, whether logging in via social sign-on or traditional email and password methods, providing peace of mind for meeting security.',
+      },
+      {
+        name: 'Effortless Meeting Creation',
+        content:
+          'Starting a new meeting is quick and hassle-free, allowing users to configure camera and microphone settings beforehand for optimal audio and video quality during discussions.',
+      },
+      {
+        name: 'Comprehensive Meeting Controls',
+        content:
+          'Participants have full control over meetings, from recording and screen sharing to emoji reactions and participant management, empowering effective collaboration.',
+      },
+      {
+        name: 'Seamless Scheduling and Access',
+        content:
+          'Schedule future meetings effortlessly, with easy access to upcoming meetings for sharing links and joining sessions, ensuring connectivity at the right time.',
+      },
+    ],
+    status: 'done',
+    imageUrl: horizoncall_feature,
+    featureImg: horizoncall_cover,
+  },
   {
     id: 'price-spy',
     title: 'Price-spy',
