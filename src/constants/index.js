@@ -650,3 +650,61 @@ export const gradientStyle = {
   textFillColor: 'transparent',
   WebkitTextFillColor: 'transparent',
 }
+
+export const metaTags = [
+  {
+    id: 'home',
+    metaNames: [
+      {
+        id: 1,
+        name: 'description',
+        content:
+          'I deliver efficient and innovative web solutions with proficiency in HTML, CSS, JavaScript, React, Node.js, RESTful API development, Git, and agile methodologies. With expertise in Figma, Adobe, and frameworks like Tailwind CSS, Sass, and Material-UI, I craft captivating and functional user experiences and interfaces. Explore my portfolio to see my works.',
+      },
+      {
+        id: 2,
+        name: 'keywords',
+        content:
+          'web developer, UX/UI designer, HTML, CSS, JavaScript, React, Node.js, RESTful API, Git, Figma, Tailwind CSS, Sass, Material-UI.',
+      },
+      {
+        id: 3,
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1.0',
+      },
+      {
+        id: 4,
+        name: 'author',
+        content: 'Ye Wang',
+      },
+    ],
+    metaProperties: [
+      {
+        id: 1,
+        name: 'title',
+        content: 'Ye W. | Full Stack Developer',
+      },
+      {
+        id: 2,
+        name: 'description',
+        content:
+          'I deliver efficient and innovative web solutions with proficiency in HTML, CSS, JavaScript, React, Node.js, RESTful API development, Git, and agile methodologies. With expertise in Figma, Adobe, and frameworks like Tailwind CSS, Sass, and Material-UI, I craft captivating and functional user experiences and interfaces. Explore my portfolio to see my works.',
+      },
+      {
+        id: 3,
+        name: 'url',
+        content: 'https://findyewang.com/',
+      },
+      {
+        id: 4,
+        name: 'image',
+        content: 'https://findyewang.com/yewang_website.jpg',
+      },
+      {
+        id: 5,
+        name: 'author',
+        content: 'Ye Wang',
+      },
+    ],
+  },
+]
