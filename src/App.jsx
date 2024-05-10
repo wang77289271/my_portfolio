@@ -4,6 +4,8 @@ import NotFound from './pages/NotFound'
 import MyDesigns from './pages/MyDesigns'
 import Project from './pages/Project'
 
+import * as Sentry from '@sentry/react'
+
 function App() {
   return (
     <>
@@ -17,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default Sentry.withProfiler(App)

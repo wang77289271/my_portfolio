@@ -30,3 +30,5 @@ dist-ssr
 
 # vscode
 .vscode
+# Sentry Config File
+.env.sentry-build-plugin
