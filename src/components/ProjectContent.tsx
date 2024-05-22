@@ -4,7 +4,7 @@ import { Works } from '../constants'
 
 const ProjectContent = ({ project }: { project: Works }) => {
   return (
-    <Section crosses={true} id='project-intro'>
+    <Section crosses id='project-intro'>
       {/* intro */}
       <div className='w-[85%] m-auto'>
         <h2 className='flex-1 text-[2.5rem] mb-12 text-n-2'>📖 Introduction</h2>

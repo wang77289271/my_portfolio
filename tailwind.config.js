@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-import { fontFamily } from 'tailwindcss/defaultTheme'
-import plugin from 'tailwindcss/plugin'
-
-export default {
+module.exports = {
+  darkMode: ["class"],
   content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-    './public/assets/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
