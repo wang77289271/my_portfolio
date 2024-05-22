@@ -49,8 +49,6 @@ const Conversation = () => {
     }
   }
 
-  console.log(messages)
-
   return (
     <>
       <Popover>
