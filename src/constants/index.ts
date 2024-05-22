@@ -50,6 +50,8 @@ import {
   ai_summarize_feature_1,
   horizoncall_cover,
   horizoncall_feature,
+  geniestack_cover,
+  geniestack_feature,
 } from '../assets'
 
 export type Navigation = {
@@ -175,6 +177,68 @@ export type Works = {
   adjustImgSize?: string
 }
 export const works = [
+  {
+    id: 'geniestack',
+    title: 'GenieStack',
+    text: 'An AI image SaaS platform with advanced image processing, secure payments, and robust search functionality, supporting features like image restoration, recoloring, object removal, generative filling, and background removal.',
+    desc: 'Welcome to the cutting-edge AI image SaaS platform, designed to revolutionize image processing. The platform integrates a secure payment infrastructure, advanced image search capabilities, and multiple AI-powered features. Built with a robust tech stack including Next.js, TypeScript, MongoDB, Clerk, Cloudinary, Stripe, Shadcn, and TailwindCSS, it offers unparalleled performance and scalability.',
+    name: 'Horizon Call',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'MongoDB',
+      'Clerk',
+      'Cloudinary',
+      'Stripe',
+      'Shadcn',
+      'Tailwind CSS',
+    ],
+    urls: [
+      {
+        name: 'View Demo',
+        url: 'https://geniestack.vercel.app/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/wang77289271/ai-saas-geniestack',
+      },
+    ],
+    features: [
+      {
+        name: 'Advanced Image Search',
+        content:
+          'Find images by content or objects present inside the image quickly and accurately.',
+      },
+      {
+        name: 'Image Restoration',
+        content: 'Revive old or damaged images effortlessly.',
+      },
+      {
+        name: 'Image Recoloring',
+        content:
+          'Customize images by replacing objects with desired colors easily.',
+      },
+      {
+        name: 'Image Generative Fill',
+        content: 'Fill in missing areas of images seamlessly.',
+      },
+      {
+        name: 'Object Removal',
+        content: 'Clean up images by removing unwanted objects with precision.',
+      },
+      {
+        name: 'Background Removal',
+        content: 'Extract objects from backgrounds with ease.',
+      },
+      {
+        name: 'Credits System',
+        content: 'Earn or purchase credits for image transformations.',
+      },
+    ],
+    status: 'done',
+    imageUrl: geniestack_cover,
+    featureImg: geniestack_feature,
+  },
   {
     id: 'horizon-call',
     title: 'Horizon Call',
