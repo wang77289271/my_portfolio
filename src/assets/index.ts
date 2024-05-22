@@ -91,6 +91,9 @@ import ai_summarize_feature_1 from './projects/ai_summarize_feature_1.png'
 import horizoncall_cover from './projects/horizoncall_cover.jpg'
 import horizoncall_feature from './projects/horizoncall_feature.png'
 
+import portrait from './portrait.png'
+import vistor from './avatar-vistor.png'
+
 export {
   check,
   close,
@@ -169,4 +172,6 @@ export {
   ai_summarize_feature_1,
   horizoncall_cover,
   horizoncall_feature,
+  portrait,
+  vistor,
 }
