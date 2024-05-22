@@ -6,7 +6,7 @@ import { designWebsites } from '../constants'
 const DesignDemos = () => {
   return (
     <div>
-      <Section crosses={true} nopadding={true} id='designDemos'>
+      <Section crosses nopadding id='designDemos'>
         <Heading
           tag='Ready to get started'
           title='My Creative Design Section'

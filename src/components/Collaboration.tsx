@@ -19,7 +19,7 @@ const Collaboration = () => {
     setDescription(description)
   }
   return (
-    <Section crosses={true} id='skills'>
+    <Section crosses id='skills'>
       <div className='container lg:flex'>
         <div className='w-full lg:max-w-[25rem] flex flex-col justify-between'>
           <h2 className='h2 mb-4 md:mb-8'>

@@ -19,7 +19,7 @@ const Works = () => {
   }
   return (
     <Section
-      crosses={true}
+      crosses
       id='works'
       className='overflow-hidden block z-5 border-t-[1px] border-[#26242C]'
     >

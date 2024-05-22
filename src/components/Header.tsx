@@ -6,6 +6,7 @@ import { BackgroundCircles, Gradient } from './design/Hero'
 import { heroBackground } from '../assets'
 import { useRef } from 'react'
 import { ScrollParallax } from 'react-just-parallax'
+import Conversation from './Conversation'
 
 const scaleVariants = {
   whileInView: {
@@ -21,12 +22,17 @@ const scaleVariants = {
 const Header = () => {
   const parallaxRef = useRef(null)
   const [tailwind, profile_3, nextjs, ts_header] = images
+
+  // const messages = [{ role: 'user', content: 'Hello' }]
+  // const response = useConversation(messages)
+  // console.log(response)
+
   return (
     <Section
       className='pt-[12rem] -mt-[5.25rem]'
-      crosses={true}
+      crosses
       crossesOffset='lg:translate-y-[5.25rem]'
-      customPaddings={true}
+      customPaddings
       id='hero'
     >
       <div className='container relative' ref={parallaxRef}>
@@ -78,10 +84,10 @@ const Header = () => {
                   <motion.ul
                     variants={scaleVariants}
                     whileInView={scaleVariants.whileInView}
-                    className='hidden absolute right-4 lg:-right-[14rem] bottom-[0rem] lg:bottom-[5.5rem] px-1 py-1  sm:flex sm:flex-col sm:items-end'
+                    className='hidden absolute right-4 lg:-right-[14rem] bottom-[0rem] lg:bottom-[5.5rem] px-1 py-1  sm:flex sm:flex-col sm:items-end sm:-right-24'
                   >
                     <div
-                      className='flex flex-row lg:flex-col justify-evenly items-start h-full mt-12 lg:mt-0 lg:ml-12 z-2
+                      className='flex flex-col justify-evenly items-start h-full mt-12 lg:mt-0 lg:ml-12 z-2
                     bg-n-9/40 backdrop-blur lg:backdrop-blur-0 border border-n-1/10 rounded-2xl lg:bg-n-9/0 lg:border-0 gap-2 lg:gap-0 px-4 py-2
                     '
                     >
@@ -117,6 +123,7 @@ const Header = () => {
 
             <Gradient />
           </div>
+          {/* ----- background ----- */}
           <div className='absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]'>
             <img
               src={heroBackground}
@@ -127,6 +134,13 @@ const Header = () => {
             />
           </div>
           <BackgroundCircles />
+        </div>
+        {/* Ai conversation */}
+        <div
+          className='absolute bottom-15 w-full flex justify-center -left-0'
+          style={{ zIndex: '9' }}
+        >
+          <Conversation />
         </div>
       </div>
     </Section>

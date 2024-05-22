@@ -17,7 +17,7 @@ const About = () => {
   }
 
   return (
-    <Section crosses={true} id='about'>
+    <Section crosses id='about'>
       <div className='container relative z-2'>
         <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]'>
           <h2 className='h2 mb-6'>
