@@ -30,7 +30,7 @@ const Home = () => {
           />
         ))}
       </Helmet>
-      <div className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'>
+      <main className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'>
         <Navbar navigation={navigation} />
         <Header />
         <About />
@@ -39,7 +39,7 @@ const Home = () => {
         <Designs />
         <Contact />
         <Footer />
-      </div>
+      </main>
       <ButtonGradient />
     </HelmetProvider>
   )
