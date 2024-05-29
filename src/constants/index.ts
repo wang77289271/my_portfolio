@@ -375,52 +375,52 @@ export const works = [
     adjuestImgSize: 'w-[50%]',
     featureImg: ai_summarize_feature_1,
   },
-  {
-    id: 'weather-forecast',
-    title: 'Weather Forecast',
-    text: 'This Weather App is built with React and allows users to get current location weather, search for weather by location, and view weather forecasts.',
-    desc: 'This weather application is a React-based application designed to provide users with easy access to weather information. Whether you want to check the current weather in your location, look up weather forecasts for specific cities, or plan ahead for outdoor activities, our app has you covered.',
-    name: 'Weather Forecast',
-    tags: [
-      'React.js',
-      'API Integration',
-      'OpenWeatherMap API',
-      'GeoDB Cities API',
-      'JavaScript (ES6+)',
-      'Sass',
-      'Figma',
-    ],
-    urls: [
-      {
-        name: 'View Demo',
-        url: 'https://ye-weather-forecast.netlify.app/',
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/wang77289271/weather_app',
-      },
-    ],
-    features: [
-      {
-        name: 'Get Current Location Weather',
-        content:
-          "Upon opening the app, users are prompted to allow access to their current location. The app fetches the current weather conditions based on the user's geographical coordinates.",
-      },
-      {
-        name: 'Search Location',
-        content:
-          'Users can search for weather information in any location by typing the city name or zip code into the search bar. The app retrieves the weather data for the specified location.',
-      },
-      {
-        name: 'Weather Forecast',
-        content:
-          'The app provides a weather forecast for the upcoming days, allowing users to plan ahead and stay informed about changes in weather conditions.',
-      },
-    ],
-    status: 'done',
-    imageUrl: weather_cover,
-    featureImg: weather_cover,
-  },
+  // {
+  //   id: 'weather-forecast',
+  //   title: 'Weather Forecast',
+  //   text: 'This Weather App is built with React and allows users to get current location weather, search for weather by location, and view weather forecasts.',
+  //   desc: 'This weather application is a React-based application designed to provide users with easy access to weather information. Whether you want to check the current weather in your location, look up weather forecasts for specific cities, or plan ahead for outdoor activities, our app has you covered.',
+  //   name: 'Weather Forecast',
+  //   tags: [
+  //     'React.js',
+  //     'API Integration',
+  //     'OpenWeatherMap API',
+  //     'GeoDB Cities API',
+  //     'JavaScript (ES6+)',
+  //     'Sass',
+  //     'Figma',
+  //   ],
+  //   urls: [
+  //     {
+  //       name: 'View Demo',
+  //       url: 'https://ye-weather-forecast.netlify.app/',
+  //     },
+  //     {
+  //       name: 'GitHub',
+  //       url: 'https://github.com/wang77289271/weather_app',
+  //     },
+  //   ],
+  //   features: [
+  //     {
+  //       name: 'Get Current Location Weather',
+  //       content:
+  //         "Upon opening the app, users are prompted to allow access to their current location. The app fetches the current weather conditions based on the user's geographical coordinates.",
+  //     },
+  //     {
+  //       name: 'Search Location',
+  //       content:
+  //         'Users can search for weather information in any location by typing the city name or zip code into the search bar. The app retrieves the weather data for the specified location.',
+  //     },
+  //     {
+  //       name: 'Weather Forecast',
+  //       content:
+  //         'The app provides a weather forecast for the upcoming days, allowing users to plan ahead and stay informed about changes in weather conditions.',
+  //     },
+  //   ],
+  //   status: 'done',
+  //   imageUrl: weather_cover,
+  //   featureImg: weather_cover,
+  // },
   {
     id: 'portfolio',
     title: 'My Portfolio',
@@ -441,7 +441,7 @@ export const works = [
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/wang77289271/pricespy',
+        url: 'https://github.com/wang77289271/my_portfolio',
       },
     ],
     features: [
