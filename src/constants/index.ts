@@ -44,7 +44,7 @@ import {
   ts_header,
   pricespy_cover,
   ai_summarize_cover,
-  weather_cover,
+  // weather_cover,
   pricespy_feature_img_1,
   portfolio_feature,
   ai_summarize_feature_1,
