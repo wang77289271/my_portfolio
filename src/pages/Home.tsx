@@ -6,11 +6,12 @@ import {
   Works,
   Header,
   Designs,
-  Contact,
+  // Contact,
   Footer,
 } from '../components'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import ButtonGradient from '../assets/svg/ButtonGradient'
+import ContactMe from '@/components/ContactMe'
 
 const Home = () => {
   const homeMetaTags = metaTags.find((tag) => tag.id === 'home')
@@ -37,7 +38,8 @@ const Home = () => {
         <Collaboration />
         <Works />
         <Designs />
-        <Contact />
+        {/* <Contact /> */}
+        <ContactMe />
         <Footer />
       </main>
       <ButtonGradient />
