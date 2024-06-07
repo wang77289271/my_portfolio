@@ -44,12 +44,14 @@ import {
   ts_header,
   pricespy_cover,
   ai_summarize_cover,
-  weather_cover,
+  // weather_cover,
   pricespy_feature_img_1,
   portfolio_feature,
   ai_summarize_feature_1,
   horizoncall_cover,
   horizoncall_feature,
+  geniestack_cover,
+  geniestack_feature,
 } from '../assets'
 
 export type Navigation = {
@@ -175,6 +177,68 @@ export type Works = {
   adjustImgSize?: string
 }
 export const works = [
+  {
+    id: 'geniestack',
+    title: 'GenieStack',
+    text: 'An AI image SaaS platform with advanced image processing, secure payments, and robust search functionality, supporting features like image restoration, recoloring, object removal, generative filling, and background removal.',
+    desc: 'Welcome to the cutting-edge AI image SaaS platform, designed to revolutionize image processing. The platform integrates a secure payment infrastructure, advanced image search capabilities, and multiple AI-powered features. Built with a robust tech stack including Next.js, TypeScript, MongoDB, Clerk, Cloudinary, Stripe, Shadcn, and TailwindCSS, it offers unparalleled performance and scalability.',
+    name: 'Horizon Call',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'MongoDB',
+      'Clerk',
+      'Cloudinary',
+      'Stripe',
+      'Shadcn',
+      'Tailwind CSS',
+    ],
+    urls: [
+      {
+        name: 'View Demo',
+        url: 'https://geniestack.vercel.app/',
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/wang77289271/ai-saas-geniestack',
+      },
+    ],
+    features: [
+      {
+        name: 'Advanced Image Search',
+        content:
+          'Find images by content or objects present inside the image quickly and accurately.',
+      },
+      {
+        name: 'Image Restoration',
+        content: 'Revive old or damaged images effortlessly.',
+      },
+      {
+        name: 'Image Recoloring',
+        content:
+          'Customize images by replacing objects with desired colors easily.',
+      },
+      {
+        name: 'Image Generative Fill',
+        content: 'Fill in missing areas of images seamlessly.',
+      },
+      {
+        name: 'Object Removal',
+        content: 'Clean up images by removing unwanted objects with precision.',
+      },
+      {
+        name: 'Background Removal',
+        content: 'Extract objects from backgrounds with ease.',
+      },
+      {
+        name: 'Credits System',
+        content: 'Earn or purchase credits for image transformations.',
+      },
+    ],
+    status: 'done',
+    imageUrl: geniestack_cover,
+    featureImg: geniestack_feature,
+  },
   {
     id: 'horizon-call',
     title: 'Horizon Call',
@@ -311,52 +375,52 @@ export const works = [
     adjuestImgSize: 'w-[50%]',
     featureImg: ai_summarize_feature_1,
   },
-  {
-    id: 'weather-forecast',
-    title: 'Weather Forecast',
-    text: 'This Weather App is built with React and allows users to get current location weather, search for weather by location, and view weather forecasts.',
-    desc: 'This weather application is a React-based application designed to provide users with easy access to weather information. Whether you want to check the current weather in your location, look up weather forecasts for specific cities, or plan ahead for outdoor activities, our app has you covered.',
-    name: 'Weather Forecast',
-    tags: [
-      'React.js',
-      'API Integration',
-      'OpenWeatherMap API',
-      'GeoDB Cities API',
-      'JavaScript (ES6+)',
-      'Sass',
-      'Figma',
-    ],
-    urls: [
-      {
-        name: 'View Demo',
-        url: 'https://ye-weather-forecast.netlify.app/',
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/wang77289271/weather_app',
-      },
-    ],
-    features: [
-      {
-        name: 'Get Current Location Weather',
-        content:
-          "Upon opening the app, users are prompted to allow access to their current location. The app fetches the current weather conditions based on the user's geographical coordinates.",
-      },
-      {
-        name: 'Search Location',
-        content:
-          'Users can search for weather information in any location by typing the city name or zip code into the search bar. The app retrieves the weather data for the specified location.',
-      },
-      {
-        name: 'Weather Forecast',
-        content:
-          'The app provides a weather forecast for the upcoming days, allowing users to plan ahead and stay informed about changes in weather conditions.',
-      },
-    ],
-    status: 'done',
-    imageUrl: weather_cover,
-    featureImg: weather_cover,
-  },
+  // {
+  //   id: 'weather-forecast',
+  //   title: 'Weather Forecast',
+  //   text: 'This Weather App is built with React and allows users to get current location weather, search for weather by location, and view weather forecasts.',
+  //   desc: 'This weather application is a React-based application designed to provide users with easy access to weather information. Whether you want to check the current weather in your location, look up weather forecasts for specific cities, or plan ahead for outdoor activities, our app has you covered.',
+  //   name: 'Weather Forecast',
+  //   tags: [
+  //     'React.js',
+  //     'API Integration',
+  //     'OpenWeatherMap API',
+  //     'GeoDB Cities API',
+  //     'JavaScript (ES6+)',
+  //     'Sass',
+  //     'Figma',
+  //   ],
+  //   urls: [
+  //     {
+  //       name: 'View Demo',
+  //       url: 'https://ye-weather-forecast.netlify.app/',
+  //     },
+  //     {
+  //       name: 'GitHub',
+  //       url: 'https://github.com/wang77289271/weather_app',
+  //     },
+  //   ],
+  //   features: [
+  //     {
+  //       name: 'Get Current Location Weather',
+  //       content:
+  //         "Upon opening the app, users are prompted to allow access to their current location. The app fetches the current weather conditions based on the user's geographical coordinates.",
+  //     },
+  //     {
+  //       name: 'Search Location',
+  //       content:
+  //         'Users can search for weather information in any location by typing the city name or zip code into the search bar. The app retrieves the weather data for the specified location.',
+  //     },
+  //     {
+  //       name: 'Weather Forecast',
+  //       content:
+  //         'The app provides a weather forecast for the upcoming days, allowing users to plan ahead and stay informed about changes in weather conditions.',
+  //     },
+  //   ],
+  //   status: 'done',
+  //   imageUrl: weather_cover,
+  //   featureImg: weather_cover,
+  // },
   {
     id: 'portfolio',
     title: 'My Portfolio',
@@ -377,7 +441,7 @@ export const works = [
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/wang77289271/pricespy',
+        url: 'https://github.com/wang77289271/my_portfolio',
       },
     ],
     features: [
@@ -741,5 +805,5 @@ export const metaTags = [
 // instructionMessage
 export const aiInstructionMessage = {
   content:
-    "You are now me(Ye Wang). all answers are equivalent to me answering. Here is my Autobiography: Hi, I’m Ye Wang, a Full Stack Developer based in Edmonton, Canada. I've always had a passion for technology and design, which led me to pursue a career in web development and design. My journey in the tech industry began during my time at the University of Alberta, where I earned a Master of Science in Multimedia. Here, I delved deep into the world of interactive media, honing my skills in design and development. After completing my post-diploma in Interactive Media Management at Algonquin College, I was eager to apply my knowledge in a professional setting. I embarked on my career as a Web Developer at Capital Industrial Sales & Service, where I had the opportunity to work on various projects, from enhancing website functionality to designing digital promotional materials. Over the years, I’ve gained extensive experience in frontend and backend development, working with technologies such as React, TypeScript, Node.js, and SQL databases. I’ve had the privilege of collaborating with talented teams at Phoenix Advertising & Marketing and Everest Educational Service, where I contributed to the development and optimization of user-focused web and mobile applications. One of my proudest achievements was the development of a reusable components library, which significantly reduced development time and improved efficiency. I’ve always been passionate about creating intuitive and visually appealing interfaces, and I take pride in my ability to bring client visions to life through creative design and coding. Outside of work, I enjoy staying up-to-date with the latest industry trends and technologies, constantly seeking opportunities to expand my skillset. Whether it’s experimenting with new frameworks or attending tech conferences, I’m always eager to learn and grow as a developer. In my free time, you can find me exploring the great outdoors, indulging in my love for photography, or unwinding with a good book. I believe in maintaining a healthy work-life balance and finding inspiration in the world around me. As I continue on my journey in the tech industry, I look forward to taking on new challenges, collaborating with passionate individuals, and making a positive impact through my work. Feel free to connect with me via email or check out my portfolio at findyewang.com.",
+    "You are now me(Ye Wang). all answers are equivalent to me answering. Here is my Autobiography: Hi, I’m Ye Wang, a Full Stack Developer based in Edmonton, Canada. I've always had a passion for technology and design, which led me to pursue a career in web development and design. My journey in the tech industry began during my time at the University of Alberta, where I earned a Master of Science in Multimedia. Here, I delved deep into the world of interactive media, honing my skills in design and development. After completing my post-diploma in Interactive Media Management at Algonquin College, I was eager to apply my knowledge in a professional setting. I embarked on my career as a Web Developer at Capital Industrial Sales & Service, where I had the opportunity to work on various projects, from enhancing website functionality to designing digital promotional materials. Over the years, I’ve gained extensive experience in frontend and backend development, working with technologies such as React, TypeScript, Node.js, and SQL databases. I’ve had the privilege of collaborating with talented teams at Phoenix Advertising & Marketing and Everest Educational Service, where I contributed to the development and optimization of user-focused web and mobile applications. One of my proudest achievements was the development of a reusable components library, which significantly reduced development time and improved efficiency. I’ve always been passionate about creating intuitive and visually appealing interfaces, and I take pride in my ability to bring client visions to life through creative design and coding. Outside of work, I enjoy staying up-to-date with the latest industry trends and technologies, constantly seeking opportunities to expand my skillset. Whether it’s experimenting with new frameworks or attending tech conferences, I’m always eager to learn and grow as a developer. In my free time, you can find me exploring the great outdoors, indulging in my love for photography, or unwinding with a good book. I believe in maintaining a healthy work-life balance and finding inspiration in the world around me. As I continue on my journey in the tech industry, I look forward to taking on new challenges, collaborating with passionate individuals, and making a positive impact through my work. Feel free to connect with me via email or check out my portfolio at findyewang.com. My girlfriend is Jialu. She is very beautiful.",
 }

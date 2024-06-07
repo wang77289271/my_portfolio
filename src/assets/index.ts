@@ -84,15 +84,16 @@ import korked from './myDesigns/korked.png'
 
 import logo_name_1 from './ye_name_1.png'
 import logo_name_2 from './ye_name_2.png'
+import portrait from './portrait.png'
+import vistor from './avatar-vistor.png'
 
 import pricespy_feature_img_1 from './projects/pricespy_features_1.png'
 import portfolio_feature from './projects/portfolio_features.jpg'
 import ai_summarize_feature_1 from './projects/ai_summarize_feature_1.png'
 import horizoncall_cover from './projects/horizoncall_cover.jpg'
 import horizoncall_feature from './projects/horizoncall_feature.png'
-
-import portrait from './portrait.png'
-import vistor from './avatar-vistor.png'
+import geniestack_cover from './projects/geniestack_cover.jpg'
+import geniestack_feature from './projects/geniestack_feature.jpg'
 
 export {
   check,
@@ -174,4 +175,6 @@ export {
   horizoncall_feature,
   portrait,
   vistor,
+  geniestack_cover,
+  geniestack_feature,
 }

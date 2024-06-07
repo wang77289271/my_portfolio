@@ -6,11 +6,12 @@ import {
   Works,
   Header,
   Designs,
-  Contact,
+  // Contact,
   Footer,
 } from '../components'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import ButtonGradient from '../assets/svg/ButtonGradient'
+import ContactMe from '@/components/ContactMe'
 
 const Home = () => {
   const homeMetaTags = metaTags.find((tag) => tag.id === 'home')
@@ -30,16 +31,17 @@ const Home = () => {
           />
         ))}
       </Helmet>
-      <div className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'>
+      <main className='pt-[4.75em] lg:pt-[5.25em] overflow-hidden'>
         <Navbar navigation={navigation} />
         <Header />
         <About />
         <Collaboration />
         <Works />
         <Designs />
-        <Contact />
+        {/* <Contact /> */}
+        <ContactMe />
         <Footer />
-      </div>
+      </main>
       <ButtonGradient />
     </HelmetProvider>
   )

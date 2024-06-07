@@ -48,7 +48,7 @@ const Header = () => {
                     className='w-full rounded-b-[1rem]'
                     width={1024}
                     height={490}
-                    alt='AI'
+                    alt='Portrait'
                   />
                 </div>
                 <ScrollParallax isAbsolutelyPositioned>
